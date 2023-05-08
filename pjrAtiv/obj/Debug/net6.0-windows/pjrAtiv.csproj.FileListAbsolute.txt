@@ -1,0 +1,17 @@
+C:\Users\matheus.mpereira17\source\repos\Atividades\pjrAtiv\pjrAtiv\bin\Debug\net6.0-windows\pjrAtiv.exe
+C:\Users\matheus.mpereira17\source\repos\Atividades\pjrAtiv\pjrAtiv\bin\Debug\net6.0-windows\pjrAtiv.deps.json
+C:\Users\matheus.mpereira17\source\repos\Atividades\pjrAtiv\pjrAtiv\bin\Debug\net6.0-windows\pjrAtiv.runtimeconfig.json
+C:\Users\matheus.mpereira17\source\repos\Atividades\pjrAtiv\pjrAtiv\bin\Debug\net6.0-windows\pjrAtiv.dll
+C:\Users\matheus.mpereira17\source\repos\Atividades\pjrAtiv\pjrAtiv\bin\Debug\net6.0-windows\pjrAtiv.pdb
+C:\Users\matheus.mpereira17\source\repos\Atividades\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\pjrAtiv.csproj.AssemblyReference.cache
+C:\Users\matheus.mpereira17\source\repos\Atividades\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\pjrAtiv.Form1.resources
+C:\Users\matheus.mpereira17\source\repos\Atividades\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\pjrAtiv.csproj.GenerateResource.cache
+C:\Users\matheus.mpereira17\source\repos\Atividades\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\pjrAtiv.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\matheus.mpereira17\source\repos\Atividades\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\pjrAtiv.AssemblyInfoInputs.cache
+C:\Users\matheus.mpereira17\source\repos\Atividades\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\pjrAtiv.AssemblyInfo.cs
+C:\Users\matheus.mpereira17\source\repos\Atividades\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\pjrAtiv.csproj.CoreCompileInputs.cache
+C:\Users\matheus.mpereira17\source\repos\Atividades\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\pjrAtiv.dll
+C:\Users\matheus.mpereira17\source\repos\Atividades\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\refint\pjrAtiv.dll
+C:\Users\matheus.mpereira17\source\repos\Atividades\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\pjrAtiv.pdb
+C:\Users\matheus.mpereira17\source\repos\Atividades\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\pjrAtiv.genruntimeconfig.cache
+C:\Users\matheus.mpereira17\source\repos\Atividades\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\ref\pjrAtiv.dll

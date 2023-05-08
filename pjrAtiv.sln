@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pjrAtiv", "pjrAtiv\pjrAtiv.csproj", "{4ADE5698-A753-41E8-8E76-75ABA653486A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4ADE5698-A753-41E8-8E76-75ABA653486A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ADE5698-A753-41E8-8E76-75ABA653486A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ADE5698-A753-41E8-8E76-75ABA653486A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ADE5698-A753-41E8-8E76-75ABA653486A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A8FCBD3D-4D3C-45A8-B2A4-352817329E18}
+	EndGlobalSection
+EndGlobal
