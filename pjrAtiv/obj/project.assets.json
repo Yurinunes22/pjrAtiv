@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\matheus.mpereira17\\.nuget\\packages\\": {}
+    "C:\\Users\\yuri.njesus\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\matheus.mpereira17\\source\\repos\\Atividades\\pjrAtiv\\pjrAtiv\\pjrAtiv.csproj",
+      "projectUniqueName": "C:\\Users\\yuri.njesus\\source\\repos\\Yuri\\pjrAtiv\\pjrAtiv\\pjrAtiv.csproj",
       "projectName": "pjrAtiv",
-      "projectPath": "C:\\Users\\matheus.mpereira17\\source\\repos\\Atividades\\pjrAtiv\\pjrAtiv\\pjrAtiv.csproj",
-      "packagesPath": "C:\\Users\\matheus.mpereira17\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\matheus.mpereira17\\source\\repos\\Atividades\\pjrAtiv\\pjrAtiv\\obj\\",
+      "projectPath": "C:\\Users\\yuri.njesus\\source\\repos\\Yuri\\pjrAtiv\\pjrAtiv\\pjrAtiv.csproj",
+      "packagesPath": "C:\\Users\\yuri.njesus\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\yuri.njesus\\source\\repos\\Yuri\\pjrAtiv\\pjrAtiv\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\matheus.mpereira17\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\yuri.njesus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

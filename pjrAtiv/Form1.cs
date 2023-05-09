@@ -1,3 +1,5 @@
+using System.Diagnostics.Eventing.Reader;
+
 namespace pjrAtiv
 {
     public partial class Form1 : Form
@@ -18,22 +20,39 @@ namespace pjrAtiv
         }
 
         private void btnLogar_Click(object sender, EventArgs e)
+            
         {
-            if (txtLogin.Text == "12345678901")
+            string mensagem;
+            if (txtLogin.TextLength < 11 || txtLogin.Text == String.Empty)
             {
-                lblMensagem.Text = "Usuário autenticado!";
-                if (txtSenha.Text== "123456")
+                mensagem = "Preencha a caixa login com um valor valido!";
+            }
+            else if (txtSenha.TextLength < 6 || txtSenha.Text == String.Empty)
+            {
+                mensagem = "Preencha a caixa senha com um valor valido!";
+            }
+            else
+            {
+                if (txtLogin.Text != "12345678901")
                 {
-                    lblMensagem.Text = " Usuário Auntenticado";
+                    mensagem = "Login inválido";
+                }
+                else if (txtSenha.Text != "123456")
+                {
+                    mensagem = "Senha inválido";
+                }
+                else
+                {
+                    mensagem = "Usuario Valido";
                 }
 
-                
+            }
+
+            // lblMensagem.Text = mensagem; //mensagem em um label
 
 
+            MessageBox.Show(mensagem, "Aviso!",MessageBoxButtons.OK,MessageBoxIcon.Warning);
 
-            
-           }
-            else lblMensagem.Text = "Usuário não encontrado";
         }
         private void lblSenha_Click(object sender, EventArgs e)
         {

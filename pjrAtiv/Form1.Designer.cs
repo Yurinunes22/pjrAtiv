@@ -38,9 +38,10 @@
             // 
             // btnLogar
             // 
-            btnLogar.Location = new Point(236, 53);
+            btnLogar.Font = new Font("Arial Rounded MT Bold", 17.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btnLogar.Location = new Point(363, 270);
             btnLogar.Name = "btnLogar";
-            btnLogar.Size = new Size(75, 23);
+            btnLogar.Size = new Size(92, 45);
             btnLogar.TabIndex = 0;
             btnLogar.Text = "Logar";
             btnLogar.UseVisualStyleBackColor = true;
@@ -49,45 +50,50 @@
             // lblLogin
             // 
             lblLogin.AutoSize = true;
-            lblLogin.Location = new Point(39, 37);
+            lblLogin.Font = new Font("Arial Rounded MT Bold", 17.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblLogin.Location = new Point(221, 77);
             lblLogin.Margin = new Padding(5, 0, 5, 0);
             lblLogin.Name = "lblLogin";
-            lblLogin.Size = new Size(37, 15);
+            lblLogin.Size = new Size(74, 27);
             lblLogin.TabIndex = 4;
             lblLogin.Text = "Login";
             lblLogin.Click += label1_Click;
             // 
             // txtLogin
             // 
-            txtLogin.Location = new Point(102, 29);
+            txtLogin.BackColor = SystemColors.HotTrack;
+            txtLogin.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
+            txtLogin.Location = new Point(363, 77);
             txtLogin.MaxLength = 11;
             txtLogin.Name = "txtLogin";
-            txtLogin.Size = new Size(112, 23);
+            txtLogin.Size = new Size(197, 38);
             txtLogin.TabIndex = 3;
             // 
             // txtSenha
             // 
-            txtSenha.Location = new Point(102, 77);
+            txtSenha.BackColor = SystemColors.HotTrack;
+            txtSenha.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
+            txtSenha.Location = new Point(363, 150);
             txtSenha.MaxLength = 6;
             txtSenha.Name = "txtSenha";
-            txtSenha.Size = new Size(112, 23);
+            txtSenha.Size = new Size(197, 38);
             txtSenha.TabIndex = 4;
             txtSenha.UseSystemPasswordChar = true;
-       
             // 
             // lblSenha
             // 
             lblSenha.AutoSize = true;
-            lblSenha.Location = new Point(39, 85);
+            lblSenha.Font = new Font("Arial Rounded MT Bold", 17.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblSenha.Location = new Point(221, 150);
             lblSenha.Name = "lblSenha";
-            lblSenha.Size = new Size(39, 15);
+            lblSenha.Size = new Size(83, 27);
             lblSenha.TabIndex = 4;
             lblSenha.Text = "Senha";
             // 
             // lblMensagem
             // 
             lblMensagem.AutoSize = true;
-            lblMensagem.Location = new Point(245, 114);
+            lblMensagem.Location = new Point(363, 363);
             lblMensagem.Name = "lblMensagem";
             lblMensagem.Size = new Size(66, 15);
             lblMensagem.TabIndex = 5;
@@ -97,7 +103,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.Control;
+            BackColor = Color.SlateGray;
             ClientSize = new Size(800, 450);
             Controls.Add(lblMensagem);
             Controls.Add(lblSenha);
