@@ -20,43 +20,61 @@ namespace pjrAtiv
         }
 
         private void btnLogar_Click(object sender, EventArgs e)
-            
+
         {
-            string mensagem;
-            if (txtLogin.TextLength < 11 || txtLogin.Text == String.Empty)
-            {
-                mensagem = "Preencha a caixa login com um valor valido!";
-            }
-            else if (txtSenha.TextLength < 6 || txtSenha.Text == String.Empty)
-            {
-                mensagem = "Preencha a caixa senha com um valor valido!";
-            }
-            else
-            {
-                if (txtLogin.Text != "12345678901")
-                {
-                    mensagem = "Login inválido";
-                }
-                else if (txtSenha.Text != "123456")
-                {
-                    mensagem = "Senha inválido";
-                }
-                else
-                {
-                    mensagem = "Usuario Valido";
-                }
-
-            }
-
-            // lblMensagem.Text = mensagem; //mensagem em um label
 
 
-            MessageBox.Show(mensagem, "Aviso!",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+
+
+
 
         }
         private void lblSenha_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtLogin_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblSenha_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblMensagem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCpf_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCriarAcesso_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(txtCpf.Text, out int res)== false )
+            {
+                lblMensagem.Text = "Digite Corretamente";
+            }
+            else if (int.TryParse(txtSenha.Text, out int res1) == false)
+            {
+                lblMensagem.Text = "Digite Corretamente";
+            }
+            
+            else 
+            { lblMensagem.Text = "Digite"; }
+            
+
+            
         }
     }
 }

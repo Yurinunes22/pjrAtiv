@@ -32,3 +32,6 @@ C:\Users\yuri.njesus\source\repos\Yuri\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\
 C:\Users\yuri.njesus\source\repos\Yuri\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\pjrAtiv.pdb
 C:\Users\yuri.njesus\source\repos\Yuri\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\pjrAtiv.genruntimeconfig.cache
 C:\Users\yuri.njesus\source\repos\Yuri\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\ref\pjrAtiv.dll
+C:\Users\yuri.njesus\source\repos\Yuri\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\pjrAtiv.TelaMenu.resources
+C:\Users\yuri.njesus\source\repos\Yuri\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\pjrAtiv.TelaDeposito.resources
+C:\Users\yuri.njesus\source\repos\Yuri\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\pjrAtiv.TelaSaque.resources

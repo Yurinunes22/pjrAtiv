@@ -28,103 +28,214 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnLogar = new Button();
+            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             lblLogin = new Label();
-            txtLogin = new TextBox();
-            txtSenha = new TextBox();
-            lblSenha = new Label();
+            txtCpf = new TextBox();
             lblMensagem = new Label();
+            txtNomeCliente = new TextBox();
+            txtEmail = new TextBox();
+            txtSenha = new TextBox();
+            txtConfirmaSenha = new TextBox();
+            txtCelular = new TextBox();
+            txtDataNasc = new TextBox();
+            txtGenero = new TextBox();
+            btnVoltar = new Button();
+            imageList1 = new ImageList(components);
+            pictureBox1 = new PictureBox();
+            btnCriarAcesso = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // btnLogar
-            // 
-            btnLogar.Font = new Font("Arial Rounded MT Bold", 17.25F, FontStyle.Regular, GraphicsUnit.Point);
-            btnLogar.Location = new Point(363, 270);
-            btnLogar.Name = "btnLogar";
-            btnLogar.Size = new Size(92, 45);
-            btnLogar.TabIndex = 0;
-            btnLogar.Text = "Logar";
-            btnLogar.UseVisualStyleBackColor = true;
-            btnLogar.Click += btnLogar_Click;
             // 
             // lblLogin
             // 
             lblLogin.AutoSize = true;
             lblLogin.Font = new Font("Arial Rounded MT Bold", 17.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblLogin.Location = new Point(221, 77);
+            lblLogin.Location = new Point(14, 22);
             lblLogin.Margin = new Padding(5, 0, 5, 0);
             lblLogin.Name = "lblLogin";
-            lblLogin.Size = new Size(74, 27);
+            lblLogin.Size = new Size(217, 27);
             lblLogin.TabIndex = 4;
-            lblLogin.Text = "Login";
+            lblLogin.Text = "Crie Seu Cadastro";
             lblLogin.Click += label1_Click;
             // 
-            // txtLogin
+            // txtCpf
             // 
-            txtLogin.BackColor = SystemColors.HotTrack;
-            txtLogin.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            txtLogin.Location = new Point(363, 77);
-            txtLogin.MaxLength = 11;
-            txtLogin.Name = "txtLogin";
-            txtLogin.Size = new Size(197, 38);
-            txtLogin.TabIndex = 3;
-            // 
-            // txtSenha
-            // 
-            txtSenha.BackColor = SystemColors.HotTrack;
-            txtSenha.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            txtSenha.Location = new Point(363, 150);
-            txtSenha.MaxLength = 6;
-            txtSenha.Name = "txtSenha";
-            txtSenha.Size = new Size(197, 38);
-            txtSenha.TabIndex = 4;
-            txtSenha.UseSystemPasswordChar = true;
-            // 
-            // lblSenha
-            // 
-            lblSenha.AutoSize = true;
-            lblSenha.Font = new Font("Arial Rounded MT Bold", 17.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblSenha.Location = new Point(221, 150);
-            lblSenha.Name = "lblSenha";
-            lblSenha.Size = new Size(83, 27);
-            lblSenha.TabIndex = 4;
-            lblSenha.Text = "Senha";
+            txtCpf.BackColor = SystemColors.ControlLightLight;
+            txtCpf.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
+            txtCpf.Location = new Point(14, 73);
+            txtCpf.MaxLength = 11;
+            txtCpf.Name = "txtCpf";
+            txtCpf.PlaceholderText = "000.000.000-00";
+            txtCpf.Size = new Size(217, 38);
+            txtCpf.TabIndex = 0;
+            txtCpf.TextChanged += txtLogin_TextChanged;
             // 
             // lblMensagem
             // 
             lblMensagem.AutoSize = true;
-            lblMensagem.Location = new Point(363, 363);
+            lblMensagem.Location = new Point(53, 542);
             lblMensagem.Name = "lblMensagem";
             lblMensagem.Size = new Size(66, 15);
             lblMensagem.TabIndex = 5;
             lblMensagem.Text = "Mensagem";
+            lblMensagem.Click += lblMensagem_Click;
+            // 
+            // txtNomeCliente
+            // 
+            txtNomeCliente.BackColor = SystemColors.ControlLightLight;
+            txtNomeCliente.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
+            txtNomeCliente.Location = new Point(14, 138);
+            txtNomeCliente.MaxLength = 11;
+            txtNomeCliente.Name = "txtNomeCliente";
+            txtNomeCliente.PlaceholderText = "Nome Completo";
+            txtNomeCliente.Size = new Size(217, 38);
+            txtNomeCliente.TabIndex = 1;
+            // 
+            // txtEmail
+            // 
+            txtEmail.BackColor = SystemColors.ControlLightLight;
+            txtEmail.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
+            txtEmail.Location = new Point(14, 208);
+            txtEmail.MaxLength = 11;
+            txtEmail.Name = "txtEmail";
+            txtEmail.PlaceholderText = "E-mail";
+            txtEmail.Size = new Size(217, 38);
+            txtEmail.TabIndex = 2;
+            // 
+            // txtSenha
+            // 
+            txtSenha.BackColor = SystemColors.ControlLightLight;
+            txtSenha.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
+            txtSenha.Location = new Point(14, 277);
+            txtSenha.MaxLength = 6;
+            txtSenha.Name = "txtSenha";
+            txtSenha.PlaceholderText = "Senha";
+            txtSenha.Size = new Size(217, 38);
+            txtSenha.TabIndex = 3;
+            // 
+            // txtConfirmaSenha
+            // 
+            txtConfirmaSenha.BackColor = SystemColors.ControlLightLight;
+            txtConfirmaSenha.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
+            txtConfirmaSenha.Location = new Point(14, 340);
+            txtConfirmaSenha.MaxLength = 6;
+            txtConfirmaSenha.Name = "txtConfirmaSenha";
+            txtConfirmaSenha.PlaceholderText = "Confirma Senha";
+            txtConfirmaSenha.Size = new Size(217, 38);
+            txtConfirmaSenha.TabIndex = 4;
+            // 
+            // txtCelular
+            // 
+            txtCelular.BackColor = SystemColors.ControlLight;
+            txtCelular.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
+            txtCelular.Location = new Point(519, 73);
+            txtCelular.MaxLength = 11;
+            txtCelular.Name = "txtCelular";
+            txtCelular.PlaceholderText = "Celular";
+            txtCelular.Size = new Size(217, 38);
+            txtCelular.TabIndex = 5;
+            // 
+            // txtDataNasc
+            // 
+            txtDataNasc.BackColor = SystemColors.ControlLightLight;
+            txtDataNasc.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
+            txtDataNasc.Location = new Point(519, 138);
+            txtDataNasc.MaxLength = 11;
+            txtDataNasc.Name = "txtDataNasc";
+            txtDataNasc.PlaceholderText = "Data de Nascimento";
+            txtDataNasc.Size = new Size(217, 38);
+            txtDataNasc.TabIndex = 6;
+            // 
+            // txtGenero
+            // 
+            txtGenero.BackColor = SystemColors.ControlLightLight;
+            txtGenero.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
+            txtGenero.Location = new Point(519, 208);
+            txtGenero.MaxLength = 11;
+            txtGenero.Name = "txtGenero";
+            txtGenero.PlaceholderText = "Genero";
+            txtGenero.Size = new Size(217, 38);
+            txtGenero.TabIndex = 7;
+            // 
+            // btnVoltar
+            // 
+            btnVoltar.Font = new Font("Arial Rounded MT Bold", 17.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btnVoltar.Location = new Point(519, 480);
+            btnVoltar.Name = "btnVoltar";
+            btnVoltar.Size = new Size(221, 41);
+            btnVoltar.TabIndex = 13;
+            btnVoltar.Text = "Voltar";
+            btnVoltar.UseVisualStyleBackColor = true;
+            btnVoltar.Click += button1_Click;
+            // 
+            // imageList1
+            // 
+            imageList1.ColorDepth = ColorDepth.Depth8Bit;
+            imageList1.ImageStream = (ImageListStreamer)resources.GetObject("imageList1.ImageStream");
+            imageList1.TransparentColor = Color.Transparent;
+            imageList1.Images.SetKeyName(0, "ju bank.png");
+            imageList1.Images.SetKeyName(1, "ju bank.png");
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(468, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(314, 293);
+            pictureBox1.TabIndex = 14;
+            pictureBox1.TabStop = false;
+            // 
+            // btnCriarAcesso
+            // 
+            btnCriarAcesso.Location = new Point(40, 484);
+            btnCriarAcesso.Name = "btnCriarAcesso";
+            btnCriarAcesso.Size = new Size(179, 41);
+            btnCriarAcesso.TabIndex = 15;
+            btnCriarAcesso.Text = "Criar Acesso";
+            btnCriarAcesso.UseVisualStyleBackColor = true;
+            btnCriarAcesso.Click += btnCriarAcesso_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SlateGray;
-            ClientSize = new Size(800, 450);
-            Controls.Add(lblMensagem);
-            Controls.Add(lblSenha);
+            ClientSize = new Size(894, 577);
+            Controls.Add(btnCriarAcesso);
+            Controls.Add(btnVoltar);
+            Controls.Add(txtGenero);
+            Controls.Add(txtDataNasc);
+            Controls.Add(txtCelular);
+            Controls.Add(txtConfirmaSenha);
             Controls.Add(txtSenha);
-            Controls.Add(txtLogin);
+            Controls.Add(txtEmail);
+            Controls.Add(txtNomeCliente);
+            Controls.Add(lblMensagem);
+            Controls.Add(txtCpf);
             Controls.Add(lblLogin);
-            Controls.Add(btnLogar);
+            Controls.Add(pictureBox1);
             Name = "Form1";
             Text = "Jukas Bank - Login";
             Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Button btnLogar;
         private Label lblLogin;
-        private TextBox txtLogin;
-        private TextBox txtSenha;
-        private Label lblSenha;
+        private TextBox txtCpf;
         private Label lblMensagem;
+        private TextBox txtNomeCliente;
+        private TextBox txtEmail;
+        private TextBox txtSenha;
+        private TextBox txtConfirmaSenha;
+        private TextBox txtCelular;
+        private TextBox txtDataNasc;
+        private TextBox txtGenero;
+        private Button btnVoltar;
+        private ImageList imageList1;
+        private PictureBox pictureBox1;
+        private Button btnCriarAcesso;
     }
 }

@@ -1,0 +1,47 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace pjrAtiv
+{
+    public partial class TelaMenu : Form
+    {
+        public TelaMenu()
+        {
+            InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TelaDeposito telaDeposito = new TelaDeposito();
+            telaDeposito.Show();
+        }
+
+        private void btnTransferencia_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_deposito_voltar(object sender, MouseEventArgs e)
+        {
+            Form1 form = new Form1();
+            form.Close();
+        }
+    }
+}
