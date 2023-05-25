@@ -30,6 +30,7 @@ namespace pjrAtiv
         private void button1_Click(object sender, EventArgs e)
         {
             TelaDeposito telaDeposito = new TelaDeposito();
+            this.Close();
             telaDeposito.Show();
         }
 
@@ -42,6 +43,18 @@ namespace pjrAtiv
         {
             Form1 form = new Form1();
             form.Close();
+        }
+
+        private void btnSacar_Click(object sender, EventArgs e)
+        {
+            TelaSaque telaSaque = new TelaSaque();
+            this.Close();
+            telaSaque.Show();
+        }
+
+        private void btnConfig_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

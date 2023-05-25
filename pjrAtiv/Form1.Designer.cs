@@ -42,9 +42,7 @@
             txtGenero = new TextBox();
             btnVoltar = new Button();
             imageList1 = new ImageList(components);
-            pictureBox1 = new PictureBox();
             btnCriarAcesso = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // lblLogin
@@ -91,6 +89,7 @@
             txtNomeCliente.PlaceholderText = "Nome Completo";
             txtNomeCliente.Size = new Size(217, 38);
             txtNomeCliente.TabIndex = 1;
+            txtNomeCliente.TextChanged += txtNomeCliente_TextChanged;
             // 
             // txtEmail
             // 
@@ -102,6 +101,7 @@
             txtEmail.PlaceholderText = "E-mail";
             txtEmail.Size = new Size(217, 38);
             txtEmail.TabIndex = 2;
+            txtEmail.TextChanged += txtEmail_TextChanged;
             // 
             // txtSenha
             // 
@@ -113,6 +113,7 @@
             txtSenha.PlaceholderText = "Senha";
             txtSenha.Size = new Size(217, 38);
             txtSenha.TabIndex = 3;
+            txtSenha.TextChanged += txtSenha_TextChanged;
             // 
             // txtConfirmaSenha
             // 
@@ -124,6 +125,7 @@
             txtConfirmaSenha.PlaceholderText = "Confirma Senha";
             txtConfirmaSenha.Size = new Size(217, 38);
             txtConfirmaSenha.TabIndex = 4;
+            txtConfirmaSenha.TextChanged += txtConfirmaSenha_TextChanged;
             // 
             // txtCelular
             // 
@@ -135,6 +137,7 @@
             txtCelular.PlaceholderText = "Celular";
             txtCelular.Size = new Size(217, 38);
             txtCelular.TabIndex = 5;
+            txtCelular.TextChanged += txtCelular_TextChanged;
             // 
             // txtDataNasc
             // 
@@ -146,6 +149,7 @@
             txtDataNasc.PlaceholderText = "Data de Nascimento";
             txtDataNasc.Size = new Size(217, 38);
             txtDataNasc.TabIndex = 6;
+            txtDataNasc.TextChanged += txtDataNasc_TextChanged;
             // 
             // txtGenero
             // 
@@ -157,6 +161,7 @@
             txtGenero.PlaceholderText = "Genero";
             txtGenero.Size = new Size(217, 38);
             txtGenero.TabIndex = 7;
+            txtGenero.TextChanged += txtGenero_TextChanged;
             // 
             // btnVoltar
             // 
@@ -176,14 +181,6 @@
             imageList1.TransparentColor = Color.Transparent;
             imageList1.Images.SetKeyName(0, "ju bank.png");
             imageList1.Images.SetKeyName(1, "ju bank.png");
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Location = new Point(468, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(314, 293);
-            pictureBox1.TabIndex = 14;
-            pictureBox1.TabStop = false;
             // 
             // btnCriarAcesso
             // 
@@ -213,11 +210,9 @@
             Controls.Add(lblMensagem);
             Controls.Add(txtCpf);
             Controls.Add(lblLogin);
-            Controls.Add(pictureBox1);
             Name = "Form1";
             Text = "Jukas Bank - Login";
             Load += Form1_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -235,7 +230,6 @@
         private TextBox txtGenero;
         private Button btnVoltar;
         private ImageList imageList1;
-        private PictureBox pictureBox1;
         private Button btnCriarAcesso;
     }
 }

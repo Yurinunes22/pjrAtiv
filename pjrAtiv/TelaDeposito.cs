@@ -59,5 +59,12 @@ namespace pjrAtiv
         {
 
         }
+
+        private void btnVoltarDeposito_Click(object sender, EventArgs e)
+        {
+            TelaMenu telaMenu = new TelaMenu();
+            this.Close();
+            telaMenu.Show();
+        }
     }
 }

@@ -61,20 +61,57 @@ namespace pjrAtiv
 
         private void btnCriarAcesso_Click(object sender, EventArgs e)
         {
-            if (int.TryParse(txtCpf.Text, out int res)== false )
-            {
-                lblMensagem.Text = "Digite Corretamente";
-            }
-            else if (int.TryParse(txtSenha.Text, out int res1) == false)
-            {
-                lblMensagem.Text = "Digite Corretamente";
-            }
-            
-            else 
-            { lblMensagem.Text = "Digite"; }
+
+            TelaMenu telaMenu = new TelaMenu();
+            this.Hide();
+            telaMenu.Show();
             
 
-            
+
+            long n;
+            bool isNumeric = long.TryParse(txtCpf.Text, out n);
+            if (!isNumeric || txtCpf.TextLength < 11)
+            {
+                MessageBox.Show("Errado");
+            }
+            else
+            {
+                MessageBox.Show("Correto");
+            }
+
+        }
+
+        private void txtGenero_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDataNasc_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void txtCelular_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void txtConfirmaSenha_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void txtSenha_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void txtNomeCliente_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
         }
     }
 }

@@ -121,6 +121,7 @@
             btnVoltarDeposito.TabIndex = 12;
             btnVoltarDeposito.Text = "Voltar";
             btnVoltarDeposito.UseVisualStyleBackColor = true;
+            btnVoltarDeposito.Click += btnVoltarDeposito_Click;
             // 
             // TelaDeposito
             // 

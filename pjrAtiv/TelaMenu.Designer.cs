@@ -37,6 +37,7 @@
             btnDepositar = new Button();
             btnSacar = new Button();
             btnPragarTrans = new Button();
+            btnEncerrar = new Button();
             SuspendLayout();
             // 
             // lblNomeCliente
@@ -84,6 +85,7 @@
             btnConfig.TabIndex = 5;
             btnConfig.Text = "Configurações";
             btnConfig.UseVisualStyleBackColor = true;
+            btnConfig.Click += btnConfig_Click;
             // 
             // lblOperacoes
             // 
@@ -114,6 +116,7 @@
             btnSacar.TabIndex = 8;
             btnSacar.Text = "Sacar";
             btnSacar.UseVisualStyleBackColor = true;
+            btnSacar.Click += btnSacar_Click;
             // 
             // btnPragarTrans
             // 
@@ -125,11 +128,21 @@
             btnPragarTrans.UseVisualStyleBackColor = true;
             btnPragarTrans.Click += btnTransferencia_Click;
             // 
+            // btnEncerrar
+            // 
+            btnEncerrar.Location = new Point(463, 383);
+            btnEncerrar.Name = "btnEncerrar";
+            btnEncerrar.Size = new Size(75, 23);
+            btnEncerrar.TabIndex = 10;
+            btnEncerrar.Text = "Encerrar";
+            btnEncerrar.UseVisualStyleBackColor = true;
+            // 
             // TelaMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnEncerrar);
             Controls.Add(btnPragarTrans);
             Controls.Add(btnSacar);
             Controls.Add(btnDepositar);
@@ -155,5 +168,6 @@
         private Button btnDepositar;
         private Button btnSacar;
         private Button btnPragarTrans;
+        private Button btnEncerrar;
     }
 }

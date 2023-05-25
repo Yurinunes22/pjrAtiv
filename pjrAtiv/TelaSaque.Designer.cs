@@ -47,6 +47,7 @@
             btnVoltarSaque.TabIndex = 21;
             btnVoltarSaque.Text = "Voltar";
             btnVoltarSaque.UseVisualStyleBackColor = true;
+            btnVoltarSaque.Click += btnVoltarSaque_Click;
             // 
             // lblMensagem
             // 

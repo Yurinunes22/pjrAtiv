@@ -16,5 +16,12 @@ namespace pjrAtiv
         {
             InitializeComponent();
         }
+
+        private void btnVoltarSaque_Click(object sender, EventArgs e)
+        {
+            TelaMenu telaMenu = new TelaMenu();
+            this.Close();
+            telaMenu.Show();
+        }
     }
 }
