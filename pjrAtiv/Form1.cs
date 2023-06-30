@@ -65,7 +65,7 @@ namespace pjrAtiv
             TelaMenu telaMenu = new TelaMenu();
             this.Hide();
             telaMenu.Show();
-            
+
 
 
             long n;

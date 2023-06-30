@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\yuri.njesus\\source\\repos\\Yuri\\pjrAtiv\\pjrAtiv\\pjrAtiv.csproj",
+      "projectUniqueName": "C:\\Users\\yuri.njesus\\source\\repos\\pjrAtiv\\pjrAtiv\\pjrAtiv.csproj",
       "projectName": "pjrAtiv",
-      "projectPath": "C:\\Users\\yuri.njesus\\source\\repos\\Yuri\\pjrAtiv\\pjrAtiv\\pjrAtiv.csproj",
+      "projectPath": "C:\\Users\\yuri.njesus\\source\\repos\\pjrAtiv\\pjrAtiv\\pjrAtiv.csproj",
       "packagesPath": "C:\\Users\\yuri.njesus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yuri.njesus\\source\\repos\\Yuri\\pjrAtiv\\pjrAtiv\\obj\\",
+      "outputPath": "C:\\Users\\yuri.njesus\\source\\repos\\pjrAtiv\\pjrAtiv\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\yuri.njesus\\AppData\\Roaming\\NuGet\\NuGet.Config",
