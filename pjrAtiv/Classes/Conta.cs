@@ -23,25 +23,4 @@ namespace pjrAtiv.Classes
         public Conta()
         { 
         }
-
-        public Conta(int idConta, int idCliente, double saldo, string status,
-            double limite, DateTime DataAbertura, DateTime DataFechamento)
-        {
-            this.IdConta = idConta;
-            this.IdCliente = idCliente;
-            this.saldo = saldo;
-            this.Status = status;
-            this.Limite = limite;
-            this.DataAbertura = DataAbertura;
-            this.DataFechamento = DataFechamento;
-
-
-        }
-
-
-
-    }
-
-
-
 }
