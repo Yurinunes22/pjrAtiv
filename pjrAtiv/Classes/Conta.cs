@@ -8,6 +8,8 @@ namespace pjrAtiv.Classes
 {
     internal class Conta
     {
+        public static int ContadordeContas { get; set; }
+        public static double SaldoTotal { get; set; }
         public int IdConta { get; set; }
         public int IdCliente { get; set; }
         public double Saldo { get; set; }
@@ -18,24 +20,59 @@ namespace pjrAtiv.Classes
 
         public Conta()
         {
-            
+            ContadordeContas = ContadordeContas + 1;
+            SaldoTotal = SaldoTotal + Saldo;
         }
 
         public Conta(int idConta, int idCliente, double saldo, string status, DateTime dataAbertura, DateTime? dataFechamento)
         {
-            this.IdConta = idConta;
+            /*this.IdConta = idConta;
             this.IdCliente = idCliente;
             this.Saldo = saldo;
             this.Status = status;
             this.DataAbertura = dataAbertura;   
-            this.Datafechamento = dataFechamento;
+            this.Datafechamento = dataFechamento;*/
+
+            IdConta = idConta;
+            IdCliente = idCliente;
+            Saldo = saldo;
+            Status = status;
+            DataAbertura = dataAbertura;
+            Datafechamento = dataFechamento;
+            ContadordeContas = ContadordeContas + 1;
+            SaldoTotal = SaldoTotal + Saldo;
+
+
+
         }
 
         public double Depositar(double valordeposito) 
         {
             this.Saldo = this.Saldo + valordeposito;
+            SaldoTotal += valordeposito;
             return this.Saldo;
             //this.Saldo += valordeposito;
         }
+
+        /*public static double RetornoSaldoTotal()
+        {
+            double saldoTodasContas;
+            saldoTodasContas = SaldoTotal + saldoTodasContas;
+            return SaldoTotal;
+        }*/
+        public static string RetornoSaldoTotal()
+        {
+            return $"O saldo total é R$:{SaldoTotal}";
+        }
+
+        public double Saque()
+        {
+
+
+            return Saldo;
+
+        }
     }
+
+
 }

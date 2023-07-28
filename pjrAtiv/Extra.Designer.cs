@@ -30,6 +30,8 @@
         {
             txtValorDeposito = new TextBox();
             btnDepositar = new Button();
+            lblSaldo = new Label();
+            BtnSaque = new Button();
             SuspendLayout();
             // 
             // txtValorDeposito
@@ -42,7 +44,7 @@
             // btnDepositar
             // 
             btnDepositar.Font = new Font("Rockwell Extra Bold", 60F, FontStyle.Regular, GraphicsUnit.Point);
-            btnDepositar.ForeColor = Color.Red;
+            btnDepositar.ForeColor = Color.SteelBlue;
             btnDepositar.Location = new Point(12, 95);
             btnDepositar.Name = "btnDepositar";
             btnDepositar.Size = new Size(491, 126);
@@ -51,15 +53,41 @@
             btnDepositar.UseVisualStyleBackColor = true;
             btnDepositar.Click += button1_Click;
             // 
+            // lblSaldo
+            // 
+            lblSaldo.AutoSize = true;
+            lblSaldo.Font = new Font("Segoe UI", 30F, FontStyle.Regular, GraphicsUnit.Point);
+            lblSaldo.ForeColor = SystemColors.ControlLightLight;
+            lblSaldo.Location = new Point(12, 233);
+            lblSaldo.Name = "lblSaldo";
+            lblSaldo.Size = new Size(141, 54);
+            lblSaldo.TabIndex = 2;
+            lblSaldo.Text = "Saldo: ";
+            // 
+            // BtnSaque
+            // 
+            BtnSaque.Font = new Font("Rockwell Extra Bold", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            BtnSaque.ForeColor = Color.SteelBlue;
+            BtnSaque.Location = new Point(378, 252);
+            BtnSaque.Name = "BtnSaque";
+            BtnSaque.Size = new Size(125, 34);
+            BtnSaque.TabIndex = 3;
+            BtnSaque.Text = "Saque";
+            BtnSaque.UseVisualStyleBackColor = true;
+            BtnSaque.Click += BtnSaque_Click;
+            // 
             // Extra
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(516, 233);
+            BackColor = Color.Navy;
+            ClientSize = new Size(513, 307);
+            Controls.Add(BtnSaque);
+            Controls.Add(lblSaldo);
             Controls.Add(btnDepositar);
             Controls.Add(txtValorDeposito);
             Name = "Extra";
-            Text = "Extra";
+            Text = " ";
             Load += Extra_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -69,5 +97,7 @@
 
         private TextBox txtValorDeposito;
         private Button btnDepositar;
+        private Label lblSaldo;
+        private Button BtnSaque;
     }
 }

@@ -116,6 +116,7 @@
             Controls.Add(txtCpf);
             Name = "TelaLogin";
             Text = "TelaLogin";
+            Load += TelaLogin_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();

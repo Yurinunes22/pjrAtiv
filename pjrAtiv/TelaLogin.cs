@@ -20,14 +20,14 @@ namespace pjrAtiv
 
         private void button1_Click(object sender, EventArgs e)
         {
-          Conta minhaConta = new Conta(); //instanciar a classe
+            Conta minhaConta = new Conta(); //instanciar a classe
 
             minhaConta.Status = "Ativa";
 
-            
-          
-          
-            
+
+
+
+
 
 
         }
@@ -38,6 +38,11 @@ namespace pjrAtiv
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void TelaLogin_Load(object sender, EventArgs e)
         {
 
         }

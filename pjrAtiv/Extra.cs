@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using pjrAtiv.Classes;
 namespace pjrAtiv
 {
-    public partial class Extra : Form  
+    public partial class Extra : Form
     {
         Conta minhaConta;
         public Extra()
@@ -22,8 +22,8 @@ namespace pjrAtiv
         {
             minhaConta = new
                 Conta(2, 2, 1000, "Ativa", DateTime.Now, null);
-            //Conta minhaConta = new Conta();
-           // minhaConta.Saldo = 1000;
+            //Conta minhaConta = new Conta(); 
+            // minhaConta.Saldo = 1000;
             //minhaConta.Status = "Ativa";
 
             //MessageBox.Show( minhaConta.Saldo.ToString() + " " +
@@ -32,8 +32,26 @@ namespace pjrAtiv
 
         private void button1_Click(object sender, EventArgs e)
         {
-            minhaConta.Depositar(Convert.ToDouble(txtValorDeposito.Text));
-            //MessageBox.Show(minhaConta.Saldo.ToString(), "Novo Saldo");
+            //metodo Concatenando
+            /*lblSaldo.Text = "Saldo: R$" + minhaConta.Depositar(Convert.ToDouble(txtValorDeposito.Text)).ToString("n2");
+            MessageBox.Show(minhaConta.Saldo.ToString(), "Novo Saldo");
+            lblSaldo.Text = "Saldo: " + minhaConta.Saldo;*/
+            //Template string
+            lblSaldo.Text = $"Saldo: R$ {minhaConta.Depositar(Convert.ToDouble(txtValorDeposito.Text)).ToString("n2")}";
+            Conta Conta1 = new Conta();
+            Conta1.Depositar(500);
+            Conta Conta2 = new Conta();
+            Conta2.Depositar(1500);
+
+            MessageBox.Show(Conta.RetornoSaldoTotal(), "Valor total: ");
+
+            //MessageBox.Show(Conta.ContadordeContas.ToString(),"Quantidade de Contas: ");
+
         }
-    } 
+
+        private void BtnSaque_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
