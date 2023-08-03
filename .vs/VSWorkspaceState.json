@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\pjrAtiv"
+    "\\pjrAtiv",
+    "\\pjrAtiv\\Classes"
   ],
-  "SelectedNode": "\\pjrAtiv\\TelaLogin.cs",
+  "SelectedNode": "\\pjrAtiv\\Classes\\Conta.cs",
   "PreviewInSolutionExplorer": false
 }
