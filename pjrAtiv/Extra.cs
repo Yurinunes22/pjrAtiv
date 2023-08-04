@@ -110,7 +110,11 @@ namespace pjrAtiv
 
         private void btnVerSaldo_Click(object sender, EventArgs e)
         {
-            lblSaldo.Text = $"Saldo: R${minhaConta.Saldo.ToString("n2")}";
+            //lblSaldo.Text = $"Saldo: R${minhaConta.Saldo.ToString("n2")}";
+
+            lblSaldo.Text = minhaConta.VerSaldo();
+
+
         }
     }
 }

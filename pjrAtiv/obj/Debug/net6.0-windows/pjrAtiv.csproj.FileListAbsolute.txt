@@ -59,3 +59,4 @@ C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\pjrAt
 C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\pjrAtiv.Properties.Resources.resources
 C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\pjrAtiv.TelaLogin.resources
 C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\pjrAtiv.Extra.resources
+C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\pjrAtiv.Collection.resources

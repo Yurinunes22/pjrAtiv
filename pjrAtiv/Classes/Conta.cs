@@ -94,7 +94,7 @@ namespace pjrAtiv.Classes
             else if (valorSaque <= 0.01)
             {
                 
-               throw new Exception("O Valor é Menor que o Saldo Disponivel");
+               throw new Exception("Valor Invalido");
             }
             else
             {
@@ -105,9 +105,13 @@ namespace pjrAtiv.Classes
 
             return this.Saldo;
 
-        }
+        } 
 
-        
+        public string VerSaldo() 
+        {
+            return $"Saldo: R${this.Saldo.ToString("n2")}";
+
+        }
         
 
             
