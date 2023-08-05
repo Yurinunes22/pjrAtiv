@@ -19,7 +19,7 @@ namespace pjrAtiv.Classes
         public DateTime? Datafechamento { get; set; }
         
 
-        public Conta()
+        public Conta() 
         {
             ContadordeContas = ContadordeContas + 1;
             /*SaldoTotal = SaldoTotal + Saldo;*/

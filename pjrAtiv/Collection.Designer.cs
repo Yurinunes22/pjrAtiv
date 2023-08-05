@@ -28,30 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtIdCliente = new TextBox();
+            TxtNomeCliente = new TextBox();
             btnAdicionar = new Button();
             btnListar = new Button();
-            listBox1 = new ListBox();
+            lstClientes = new ListBox();
             SuspendLayout();
             // 
-            // textBox1
+            // txtIdCliente
             // 
-            textBox1.Location = new Point(12, 53);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(65, 23);
-            textBox1.TabIndex = 0;
+            txtIdCliente.Location = new Point(12, 53);
+            txtIdCliente.Name = "txtIdCliente";
+            txtIdCliente.Size = new Size(65, 23);
+            txtIdCliente.TabIndex = 0;
             // 
-            // textBox2
+            // TxtNomeCliente
             // 
-            textBox2.Location = new Point(12, 120);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(343, 23);
-            textBox2.TabIndex = 1;
+            TxtNomeCliente.Location = new Point(12, 120);
+            TxtNomeCliente.Name = "TxtNomeCliente";
+            TxtNomeCliente.Size = new Size(343, 23);
+            TxtNomeCliente.TabIndex = 1;
             // 
             // btnAdicionar
             // 
-            btnAdicionar.Location = new Point(104, 189);
+            btnAdicionar.Location = new Point(54, 189);
             btnAdicionar.Name = "btnAdicionar";
             btnAdicionar.Size = new Size(75, 23);
             btnAdicionar.TabIndex = 2;
@@ -61,32 +61,33 @@
             // 
             // btnListar
             // 
-            btnListar.Location = new Point(185, 189);
+            btnListar.Location = new Point(219, 189);
             btnListar.Name = "btnListar";
             btnListar.Size = new Size(75, 23);
             btnListar.TabIndex = 3;
             btnListar.Text = "Listar";
             btnListar.UseVisualStyleBackColor = true;
+            btnListar.Click += btnListar_Click;
             // 
-            // listBox1
+            // lstClientes
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(12, 287);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(341, 184);
-            listBox1.TabIndex = 4;
+            lstClientes.FormattingEnabled = true;
+            lstClientes.ItemHeight = 15;
+            lstClientes.Location = new Point(12, 287);
+            lstClientes.Name = "lstClientes";
+            lstClientes.Size = new Size(341, 184);
+            lstClientes.TabIndex = 4;
             // 
             // Collection
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(365, 507);
-            Controls.Add(listBox1);
+            Controls.Add(lstClientes);
             Controls.Add(btnListar);
             Controls.Add(btnAdicionar);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(TxtNomeCliente);
+            Controls.Add(txtIdCliente);
             Name = "Collection";
             Text = "Collection";
             Load += Collection_Load;
@@ -96,10 +97,10 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtIdCliente;
+        private TextBox TxtNomeCliente;
         private Button btnAdicionar;
         private Button btnListar;
-        private ListBox listBox1;
+        private ListBox lstClientes;
     }
 }

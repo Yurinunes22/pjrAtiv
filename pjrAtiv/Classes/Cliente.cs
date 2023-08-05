@@ -9,12 +9,12 @@ namespace pjrAtiv.Classes
     public class Cliente
     {
 
-        private int _id;
+        private int Id;
         public int id
         {
             get 
             {
-             return this._id;
+             return this.Id;
             }
             set 
             {
@@ -26,7 +26,7 @@ namespace pjrAtiv.Classes
                 }
                 else
                 {
-                    this._id = value;
+                    this.id = value;
 
                 }
               
@@ -37,6 +37,12 @@ namespace pjrAtiv.Classes
 
 
 
-        public string NomeCliente { get; set; }
+        public string Nome { get; set; }
+
+        public Cliente(int id, string nome) 
+        {
+         this.Id = id;
+         this.Nome = nome;  
+        }
     }
 }
