@@ -58,7 +58,7 @@ namespace pjrAtiv
 
         private void cadastroToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Form1 JanelaCadastro = new Form1();
+            TelaCadastro JanelaCadastro = new TelaCadastro();
             JanelaCadastro.MdiParent = this;
             JanelaCadastro.Show();
         }

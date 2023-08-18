@@ -4,10 +4,13 @@
     <Compile Update="Collection.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="C:\Users\yuri.njesus\Desktop\Extra.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Extra.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form1.cs">
+    <Compile Update="TelaCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="tela inicial.cs">

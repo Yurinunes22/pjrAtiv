@@ -1,0 +1,9 @@
+pjrAtiv/bin
+pjrAtiv/obj
+.vs/
+DTO/bin
+DTO/obj
+DAL/bin
+DAL/obj
+BLL/bin
+BLL/obj

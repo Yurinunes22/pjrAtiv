@@ -1,0 +1,13 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="pjrAtiv.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="strConexão" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;workstation id=JukasBankss.mssql.somee.com;packet size=4096;user id=yurinunes_SQLLogin_1;pwd=a1afuzsrnd;data source=JukasBankss.mssql.somee.com;persist security info=False;initial catalog=JukasBankss&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">workstation id=JukasBankss.mssql.somee.com;packet size=4096;user id=yurinunes_SQLLogin_1;pwd=a1afuzsrnd;data source=JukasBankss.mssql.somee.com;persist security info=False;initial catalog=JukasBankss</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

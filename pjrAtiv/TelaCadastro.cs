@@ -2,9 +2,9 @@ using System.Diagnostics.Eventing.Reader;
 
 namespace pjrAtiv
 {
-    public partial class Form1 : Form
+    public partial class TelaCadastro : Form
     {
-        public Form1()
+        public TelaCadastro()
         {
             InitializeComponent();
         }

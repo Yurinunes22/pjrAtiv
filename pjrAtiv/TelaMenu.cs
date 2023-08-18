@@ -41,7 +41,7 @@ namespace pjrAtiv
 
         private void btn_deposito_voltar(object sender, MouseEventArgs e)
         {
-            Form1 form = new Form1();
+            TelaCadastro form = new TelaCadastro();
             form.Close();
         }
 

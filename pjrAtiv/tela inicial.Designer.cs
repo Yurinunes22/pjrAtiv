@@ -61,14 +61,14 @@
             // loginToolStripMenuItem1
             // 
             loginToolStripMenuItem1.Name = "loginToolStripMenuItem1";
-            loginToolStripMenuItem1.Size = new Size(121, 22);
+            loginToolStripMenuItem1.Size = new Size(180, 22);
             loginToolStripMenuItem1.Text = "Login";
             loginToolStripMenuItem1.Click += loginToolStripMenuItem1_Click;
             // 
             // cadastroToolStripMenuItem1
             // 
             cadastroToolStripMenuItem1.Name = "cadastroToolStripMenuItem1";
-            cadastroToolStripMenuItem1.Size = new Size(121, 22);
+            cadastroToolStripMenuItem1.Size = new Size(180, 22);
             cadastroToolStripMenuItem1.Text = "Cadastro";
             cadastroToolStripMenuItem1.Click += cadastroToolStripMenuItem1_Click;
             // 
@@ -92,21 +92,21 @@
             // saqueToolStripMenuItem
             // 
             saqueToolStripMenuItem.Name = "saqueToolStripMenuItem";
-            saqueToolStripMenuItem.Size = new Size(180, 22);
+            saqueToolStripMenuItem.Size = new Size(143, 22);
             saqueToolStripMenuItem.Text = "Saque";
             saqueToolStripMenuItem.Click += saqueToolStripMenuItem_Click;
             // 
             // depositoToolStripMenuItem1
             // 
             depositoToolStripMenuItem1.Name = "depositoToolStripMenuItem1";
-            depositoToolStripMenuItem1.Size = new Size(180, 22);
+            depositoToolStripMenuItem1.Size = new Size(143, 22);
             depositoToolStripMenuItem1.Text = "Deposito";
             depositoToolStripMenuItem1.Click += depositoToolStripMenuItem1_Click;
             // 
             // transferenciaToolStripMenuItem
             // 
             transferenciaToolStripMenuItem.Name = "transferenciaToolStripMenuItem";
-            transferenciaToolStripMenuItem.Size = new Size(180, 22);
+            transferenciaToolStripMenuItem.Size = new Size(143, 22);
             transferenciaToolStripMenuItem.Text = "Transferencia";
             // 
             // tela_inicial

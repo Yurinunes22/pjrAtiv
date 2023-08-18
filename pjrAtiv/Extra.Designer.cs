@@ -41,6 +41,7 @@
             txtValorDeposito.Name = "txtValorDeposito";
             txtValorDeposito.Size = new Size(491, 23);
             txtValorDeposito.TabIndex = 0;
+            txtValorDeposito.TextChanged += txtValorDeposito_TextChanged;
             // 
             // btnDepositar
             // 
