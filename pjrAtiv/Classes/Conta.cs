@@ -45,7 +45,7 @@ namespace pjrAtiv.Classes
 
 
 
-        }+
+        }
 
         public double Depositar(double valordeposito)
         {

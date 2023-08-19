@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using System.Diagnostics.Eventing.Reader;
 
 namespace pjrAtiv
@@ -51,7 +52,10 @@ namespace pjrAtiv
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            tela_inicial janelaInicial = new tela_inicial();
+            janelaInicial.MdiParent = this;
+            //this.Hide();
+            janelaInicial.Show();
         }
 
         private void lblCpf_Click(object sender, EventArgs e)
@@ -69,8 +73,8 @@ namespace pjrAtiv
 
 
             long n;
-            bool isNumeric = long.TryParse(txtCpf.Text, out n);
-            if (!isNumeric || txtCpf.TextLength < 11)
+            bool isNumeric = long.TryParse(txtNome.Text, out n);
+            if (!isNumeric || txtNome.TextLength < 11)
             {
                 MessageBox.Show("Errado");
             }

@@ -46,5 +46,10 @@ namespace pjrAtiv
         {
 
         }
+
+        private void btnCriarconta_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

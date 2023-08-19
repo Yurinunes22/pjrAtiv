@@ -42,7 +42,7 @@
             // 
             // txtCpf
             // 
-            txtCpf.BackColor = SystemColors.InactiveCaptionText;
+            txtCpf.BackColor = SystemColors.ControlLightLight;
             txtCpf.Location = new Point(530, 93);
             txtCpf.Name = "txtCpf";
             txtCpf.PlaceholderText = "000.000.000-00";
@@ -51,7 +51,7 @@
             // 
             // txtSenha
             // 
-            txtSenha.BackColor = SystemColors.InfoText;
+            txtSenha.BackColor = SystemColors.HighlightText;
             txtSenha.Location = new Point(530, 164);
             txtSenha.Name = "txtSenha";
             txtSenha.PlaceholderText = "******";
@@ -76,6 +76,7 @@
             btnCriarconta.TabIndex = 3;
             btnCriarconta.Text = "Criar Conta";
             btnCriarconta.UseVisualStyleBackColor = true;
+            btnCriarconta.Click += btnCriarconta_Click;
             // 
             // pictureBox2
             // 
@@ -95,11 +96,12 @@
             // lblJukasbanks
             // 
             lblJukasbanks.AutoSize = true;
+            lblJukasbanks.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
             lblJukasbanks.ForeColor = Color.DarkViolet;
-            lblJukasbanks.Location = new Point(160, 326);
+            lblJukasbanks.Location = new Point(117, 309);
             lblJukasbanks.Name = "lblJukasbanks";
-            lblJukasbanks.Size = new Size(72, 15);
-            lblJukasbanks.TabIndex = 6;
+            lblJukasbanks.Size = new Size(161, 37);
+            lblJukasbanks.TabIndex = 15;
             lblJukasbanks.Text = "Juka's Banks";
             lblJukasbanks.Click += label1_Click;
             // 
@@ -107,6 +109,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(800, 450);
             Controls.Add(lblJukasbanks);
             Controls.Add(pictureBox2);
