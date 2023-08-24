@@ -19,7 +19,7 @@ namespace pjrAtiv
 
         private void tela_inicial_Load(object sender, EventArgs e)
         {
-             
+
         }
 
         private void operaçõesToolStripMenuItem_Click(object sender, EventArgs e)

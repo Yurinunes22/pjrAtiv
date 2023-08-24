@@ -47,12 +47,15 @@
             txtCEP = new TextBox();
             txtGenero = new TextBox();
             txtDataNasc = new TextBox();
+            pictureBox2 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // lblLogin
             // 
             lblLogin.AutoSize = true;
             lblLogin.Font = new Font("Arial Rounded MT Bold", 17.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblLogin.ForeColor = Color.DarkViolet;
             lblLogin.Location = new Point(14, 22);
             lblLogin.Margin = new Padding(5, 0, 5, 0);
             lblLogin.Name = "lblLogin";
@@ -63,8 +66,9 @@
             // 
             // txtNome
             // 
-            txtNome.BackColor = SystemColors.ControlLightLight;
+            txtNome.BackColor = SystemColors.ButtonHighlight;
             txtNome.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
+            txtNome.ForeColor = SystemColors.InactiveCaptionText;
             txtNome.Location = new Point(14, 78);
             txtNome.MaxLength = 11;
             txtNome.Name = "txtNome";
@@ -240,12 +244,23 @@
             txtDataNasc.Size = new Size(242, 38);
             txtDataNasc.TabIndex = 19;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(-6, 528);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(107, 69);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 20;
+            pictureBox2.TabStop = false;
+            // 
             // TelaCadastro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.SlateGray;
+            BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(894, 603);
+            Controls.Add(pictureBox2);
             Controls.Add(txtDataNasc);
             Controls.Add(txtGenero);
             Controls.Add(txtCEP);
@@ -265,6 +280,7 @@
             Name = "TelaCadastro";
             Text = " ";
             Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -287,5 +303,6 @@
         private TextBox txtCEP;
         private TextBox txtGenero;
         private TextBox txtDataNasc;
+        private PictureBox pictureBox2;
     }
 }
