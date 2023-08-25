@@ -60,3 +60,10 @@ C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\pjrAt
 C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\pjrAtiv.Collection.resources
 C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\pjrAtiv.TelaCadastro.resources
 C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\bin\Debug\net6.0-windows\pjrAtiv.dll.config
+C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\pjrAtiv.csproj.CopyComplete

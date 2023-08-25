@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace pjrAtiv.Classes
 {
-    internal class Conta
+    internal class ContaPastaClasses
     {
         public static int ContadordeContas { get; set; }
         /*public static double SaldoTotal { get; set; }*/
@@ -19,13 +19,13 @@ namespace pjrAtiv.Classes
         public DateTime? Datafechamento { get; set; }
         
 
-        public Conta() 
+        public ContaPastaClasses() 
         {
             ContadordeContas = ContadordeContas + 1;
             /*SaldoTotal = SaldoTotal + Saldo;*/
         }
 
-        public Conta(int idConta, int idCliente, double saldo, string status, DateTime dataAbertura, DateTime? dataFechamento)
+        public ContaPastaClasses(int idConta, int idCliente, double saldo, string status, DateTime dataAbertura, DateTime? dataFechamento)
         {
             /*this.IdConta = idConta;
             this.IdCliente = idCliente;

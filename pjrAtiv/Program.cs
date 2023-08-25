@@ -11,7 +11,7 @@ namespace pjrAtiv
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new tela_inicial());
+            Application.Run(new TelaLogin());
         }
     }
 }
