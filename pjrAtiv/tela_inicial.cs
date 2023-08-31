@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace pjrAtiv
 {
@@ -51,9 +52,42 @@ namespace pjrAtiv
 
         private void loginToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            TelaLogin Janelalogin = new TelaLogin();
-            Janelalogin.MdiParent = this;
-            Janelalogin.Show();
+
+
+
+
+
+            if (this.menu.Items[0].Text == "Login")
+
+            {
+
+                TelaLogin JanelaLogin = new TelaLogin();
+
+                JanelaLogin.MdiParent = this;
+
+
+                JanelaLogin.Show();
+
+            }
+
+            else
+
+            {
+
+                menu.Items[0].Text = "Login";
+
+                menu.Items[1].Visible = false;
+
+
+
+                UsuarioLogado.Deslogar();
+
+            }
+
+
+
+
+
         }
 
         private void cadastroToolStripMenuItem1_Click(object sender, EventArgs e)

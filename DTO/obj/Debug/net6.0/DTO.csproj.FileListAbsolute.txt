@@ -1,0 +1,12 @@
+C:\Users\yuri.njesus\source\repos\pjrAtiv\DTO\bin\Debug\net6.0\DTO.deps.json
+C:\Users\yuri.njesus\source\repos\pjrAtiv\DTO\bin\Debug\net6.0\DTO.dll
+C:\Users\yuri.njesus\source\repos\pjrAtiv\DTO\bin\Debug\net6.0\DTO.pdb
+C:\Users\yuri.njesus\source\repos\pjrAtiv\DTO\obj\Debug\net6.0\DTO.csproj.AssemblyReference.cache
+C:\Users\yuri.njesus\source\repos\pjrAtiv\DTO\obj\Debug\net6.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yuri.njesus\source\repos\pjrAtiv\DTO\obj\Debug\net6.0\DTO.AssemblyInfoInputs.cache
+C:\Users\yuri.njesus\source\repos\pjrAtiv\DTO\obj\Debug\net6.0\DTO.AssemblyInfo.cs
+C:\Users\yuri.njesus\source\repos\pjrAtiv\DTO\obj\Debug\net6.0\DTO.csproj.CoreCompileInputs.cache
+C:\Users\yuri.njesus\source\repos\pjrAtiv\DTO\obj\Debug\net6.0\DTO.dll
+C:\Users\yuri.njesus\source\repos\pjrAtiv\DTO\obj\Debug\net6.0\refint\DTO.dll
+C:\Users\yuri.njesus\source\repos\pjrAtiv\DTO\obj\Debug\net6.0\DTO.pdb
+C:\Users\yuri.njesus\source\repos\pjrAtiv\DTO\obj\Debug\net6.0\ref\DTO.dll

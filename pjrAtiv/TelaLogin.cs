@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DTO;
 using pjrAtiv.Classes;
 
 namespace pjrAtiv
@@ -49,7 +50,7 @@ namespace pjrAtiv
 
                 //criando texto do comando, tipo e conexão que será usada
 
-                cmd.CommandText = "psvalidaLogin";
+                cmd.CommandText = "ps_validaLogin";
 
                 cmd.CommandType = CommandType.StoredProcedure;
 
@@ -57,8 +58,8 @@ namespace pjrAtiv
 
                 //passando parâmetros necessários
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("cpfCliente", txtCpf);
-                cmd.Parameters.AddWithValue("SenhaLogin", txtSenha);
+                cmd.Parameters.AddWithValue("cpfCliente", txtCpf.Text);
+                cmd.Parameters.AddWithValue("SenhaLogin", txtSenha.Text);
 
                 conexao.Open(); //abrindo conexão
 
@@ -79,15 +80,15 @@ namespace pjrAtiv
 
                     UsuarioLogado.numero = leitor.GetString(6);
 
-                    if (!leitor.IsDBNull(5))
+                    /*if (!leitor.IsDBNull(5))
 
                     {
 
                         UsuarioLogado.complemento = leitor.GetString(7);
 
-                    }
+                    }*/
 
-
+                    UsuarioLogado.complemento = leitor.GetString(7);
 
                     UsuarioLogado.cidade = leitor.GetString(8);
 
@@ -124,6 +125,78 @@ namespace pjrAtiv
 
                     //ler novamente o leitor
                     leitor = cmd.ExecuteReader();
+
+
+                    //verificar se há linhas retornadas do leitor
+
+                    if (leitor.HasRows)
+
+                    {
+
+                        //repete a leitura e enquanto há linhas segue na estrutura
+
+                        //de repetição
+
+                        while (leitor.Read())
+
+                        {
+
+                            //cria uma conta na memória
+
+                            Conta conta = new Conta();
+
+                            //passa os dados do leitor para a conta na memória - objeto conta
+
+                            conta.idConta = leitor.GetInt32(0);
+
+                            conta.idCliente = leitor.GetInt32(1);
+
+                            conta.dataAbertura = leitor.GetDateTime(2);
+
+                            conta.saldo = leitor.GetDecimal(4);
+
+                            conta.tipoConta = leitor.GetString(5);
+
+                            conta.statusConta = leitor.GetString(6);
+
+                            conta.senhaConta = leitor.GetString(7);
+
+
+
+                            //adiciona a conta recém criada na memória para a colection de contas
+
+                            UsuarioLogado.Contas.Add(conta);
+
+                        }
+
+                    }
+
+                    leitor.Close(); //fecha leitor
+
+                    conexao.Close(); //fecha conexao com BD
+
+                    Form telainicial = Application.OpenForms["TelaInicial"];
+                    //acessando o formulário aberto através da variável janelaPrincipal
+                    MenuStrip menuPrincipal = (MenuStrip)telainicial.Controls[0];
+                    menuPrincipal.Items[0].Text = "Logout";
+                    menuPrincipal.Items[1].Visible = true;
+                   /* menuPrincipal.Items[2].Visible = true;
+                    menuPrincipal.Items[3].Visible = true;
+                    menuPrincipal.Items[4].Visible = true;
+                    menuPrincipal.Items[4].Text = UsuarioLogado.nome;
+                    menuPrincipal.Items[5].Visible = true;
+                    menuPrincipal.Items[6].Visible = true;
+                    menuPrincipal.Items[6].Text = UsuarioLogado.Contas[0].idCliente.ToString();*/
+
+
+
+                    MessageBox.Show($"Olá,{UsuarioLogado.nome}!\n" +
+                        $"Você foi logado na conta {UsuarioLogado.Contas[0].idCliente.ToString()}\n" +
+                        $"Para trocar de conta, utilize o menu Conta\\Alternar Conta");
+                    //MessageBox.Show($"{CorrentistaLogado.Id.ToString()},{CorrentistaLogado.NomeCorrentista},{CorrentistaLogado.DataNascimento.ToString()},{CorrentistaLogado.Logradouro}," +
+                    //    $"{CorrentistaLogado.Numero},{CorrentistaLogado.Complemento},{CorrentistaLogado.Cidade}," +
+                    //    $"{CorrentistaLogado.Estado},{CorrentistaLogado.Cpf},{CorrentistaLogado.Senha},{CorrentistaLogado.Celular}");
+                    this.Close();
                 }
                 else
                 {
@@ -134,6 +207,7 @@ namespace pjrAtiv
             {
                 MessageBox.Show(ex.Message);
             }
+
 
            
 

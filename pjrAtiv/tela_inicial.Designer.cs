@@ -28,33 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            menuStrip1 = new MenuStrip();
+            menu = new MenuStrip();
             cadastroToolStripMenuItem = new ToolStripMenuItem();
             loginToolStripMenuItem1 = new ToolStripMenuItem();
             cadastroToolStripMenuItem1 = new ToolStripMenuItem();
-            menuToolStripMenuItem = new ToolStripMenuItem();
             loginToolStripMenuItem = new ToolStripMenuItem();
             saqueToolStripMenuItem = new ToolStripMenuItem();
             depositoToolStripMenuItem1 = new ToolStripMenuItem();
             transferenciaToolStripMenuItem = new ToolStripMenuItem();
-            menuStrip1.SuspendLayout();
+            menu.SuspendLayout();
             SuspendLayout();
             // 
-            // menuStrip1
+            // menu
             // 
-            menuStrip1.Dock = DockStyle.Left;
-            menuStrip1.Items.AddRange(new ToolStripItem[] { cadastroToolStripMenuItem, menuToolStripMenuItem, loginToolStripMenuItem });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(81, 540);
-            menuStrip1.TabIndex = 0;
-            menuStrip1.Text = "menuStrip1";
+            menu.Items.AddRange(new ToolStripItem[] { cadastroToolStripMenuItem, loginToolStripMenuItem });
+            menu.Location = new Point(0, 0);
+            menu.Name = "menu";
+            menu.Size = new Size(908, 24);
+            menu.TabIndex = 0;
+            menu.Text = "menu";
             // 
             // cadastroToolStripMenuItem
             // 
             cadastroToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { loginToolStripMenuItem1, cadastroToolStripMenuItem1 });
             cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            cadastroToolStripMenuItem.Size = new Size(68, 19);
+            cadastroToolStripMenuItem.Size = new Size(48, 20);
             cadastroToolStripMenuItem.Text = "Inicio";
             cadastroToolStripMenuItem.Click += cadastroToolStripMenuItem_Click;
             // 
@@ -72,41 +70,33 @@
             cadastroToolStripMenuItem1.Text = "Cadastro";
             cadastroToolStripMenuItem1.Click += cadastroToolStripMenuItem1_Click;
             // 
-            // menuToolStripMenuItem
-            // 
-            menuToolStripMenuItem.Enabled = false;
-            menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            menuToolStripMenuItem.Size = new Size(68, 19);
-            menuToolStripMenuItem.Text = "Menu";
-            menuToolStripMenuItem.Click += menuToolStripMenuItem_Click;
-            // 
             // loginToolStripMenuItem
             // 
             loginToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { saqueToolStripMenuItem, depositoToolStripMenuItem1, transferenciaToolStripMenuItem });
             loginToolStripMenuItem.Enabled = false;
             loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            loginToolStripMenuItem.Size = new Size(68, 19);
+            loginToolStripMenuItem.Size = new Size(75, 20);
             loginToolStripMenuItem.Text = "Operações";
             loginToolStripMenuItem.Click += loginToolStripMenuItem_Click;
             // 
             // saqueToolStripMenuItem
             // 
             saqueToolStripMenuItem.Name = "saqueToolStripMenuItem";
-            saqueToolStripMenuItem.Size = new Size(143, 22);
+            saqueToolStripMenuItem.Size = new Size(180, 22);
             saqueToolStripMenuItem.Text = "Saque";
             saqueToolStripMenuItem.Click += saqueToolStripMenuItem_Click;
             // 
             // depositoToolStripMenuItem1
             // 
             depositoToolStripMenuItem1.Name = "depositoToolStripMenuItem1";
-            depositoToolStripMenuItem1.Size = new Size(143, 22);
+            depositoToolStripMenuItem1.Size = new Size(180, 22);
             depositoToolStripMenuItem1.Text = "Deposito";
             depositoToolStripMenuItem1.Click += depositoToolStripMenuItem1_Click;
             // 
             // transferenciaToolStripMenuItem
             // 
             transferenciaToolStripMenuItem.Name = "transferenciaToolStripMenuItem";
-            transferenciaToolStripMenuItem.Size = new Size(143, 22);
+            transferenciaToolStripMenuItem.Size = new Size(180, 22);
             transferenciaToolStripMenuItem.Text = "Transferencia";
             // 
             // tela_inicial
@@ -116,26 +106,25 @@
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(908, 540);
             ControlBox = false;
-            Controls.Add(menuStrip1);
+            Controls.Add(menu);
             IsMdiContainer = true;
-            MainMenuStrip = menuStrip1;
+            MainMenuStrip = menu;
             MaximumSize = new Size(1000, 1000);
             MinimizeBox = false;
             Name = "tela_inicial";
             Text = "tela_inicial";
             Load += tela_inicial_Load;
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
+            menu.ResumeLayout(false);
+            menu.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private MenuStrip menuStrip1;
+        private MenuStrip menu;
         private ToolStripMenuItem loginToolStripMenuItem;
         private ToolStripMenuItem cadastroToolStripMenuItem;
-        private ToolStripMenuItem menuToolStripMenuItem;
         private ToolStripMenuItem loginToolStripMenuItem1;
         private ToolStripMenuItem cadastroToolStripMenuItem1;
         private ToolStripMenuItem saqueToolStripMenuItem;

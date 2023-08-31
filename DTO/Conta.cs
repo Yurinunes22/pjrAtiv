@@ -19,9 +19,9 @@ namespace DTO
 
             //public DateTime DataFechamento { get; set; }
 
-            public double saldo { get; set; }
+            public decimal saldo { get; set; }
 
-            public double tipoConta { get; set; }
+            public string tipoConta { get; set; }
 
             public string statusConta { get; set; }
 

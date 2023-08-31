@@ -35,7 +35,7 @@
             btnentrar = new Button();
             btnCriarconta = new Button();
             pictureBox2 = new PictureBox();
-            contextMenuStrip1 = new ContextMenuStrip(components);
+            contextmenu = new ContextMenuStrip(components);
             lblJukasbanks = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -88,10 +88,10 @@
             pictureBox2.TabIndex = 4;
             pictureBox2.TabStop = false;
             // 
-            // contextMenuStrip1
+            // contextmenu
             // 
-            contextMenuStrip1.Name = "contextMenuStrip1";
-            contextMenuStrip1.Size = new Size(61, 4);
+            contextmenu.Name = "contextmenu";
+            contextmenu.Size = new Size(61, 4);
             // 
             // lblJukasbanks
             // 
@@ -132,7 +132,7 @@
         private Button btnentrar;
         private Button btnCriarconta;
         private PictureBox pictureBox2;
-        private ContextMenuStrip contextMenuStrip1;
+        private ContextMenuStrip contextmenu;
         private Label lblJukasbanks;
     }
 }
