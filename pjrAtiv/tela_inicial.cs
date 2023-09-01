@@ -31,6 +31,31 @@ namespace pjrAtiv
         private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+            if (this.menu.Items[0].Text == "Login")
+
+            {
+
+                TelaLogin JanelaLogin = new TelaLogin();
+
+                JanelaLogin.MdiParent = this;
+
+
+                JanelaLogin.Show();
+
+            }
+
+            else
+
+            {
+
+                menu.Items[0].Text = "Login";
+
+                menu.Items[1].Visible = false;
+                menu.Items[2].Visible = false;
+                menu.Items[3].Visible = false;
+                UsuarioLogado.Deslogar();
+
+            }
         }
 
         private void loginToolStripMenuItem_Click(object sender, EventArgs e)
@@ -57,32 +82,6 @@ namespace pjrAtiv
 
 
 
-            if (this.menu.Items[0].Text == "Login")
-
-            {
-
-                TelaLogin JanelaLogin = new TelaLogin();
-
-                JanelaLogin.MdiParent = this;
-
-
-                JanelaLogin.Show();
-
-            }
-
-            else
-
-            {
-
-                menu.Items[0].Text = "Login";
-
-                menu.Items[1].Visible = false;
-
-
-
-                UsuarioLogado.Deslogar();
-
-            }
 
 
 
@@ -99,16 +98,37 @@ namespace pjrAtiv
 
         private void saqueToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            /*TelaSaque JanelaSaque = new TelaSaque();
+            JanelaSaque.MdiParent = this;
+            JanelaSaque.Show();*/
+        }
+
+        private void depositoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            /*TelaDeposito JanelaDeposito = new TelaDeposito();
+            JanelaDeposito.MdiParent = this;
+            JanelaDeposito.Show();*/
+        }
+
+        private void saqueToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
             TelaSaque JanelaSaque = new TelaSaque();
             JanelaSaque.MdiParent = this;
             JanelaSaque.Show();
         }
 
-        private void depositoToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void depositoToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             TelaDeposito JanelaDeposito = new TelaDeposito();
             JanelaDeposito.MdiParent = this;
             JanelaDeposito.Show();
+        }
+
+        private void cadastroToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            TelaCadastro JanelaCadastro = new TelaCadastro();
+            JanelaCadastro.MdiParent = this;
+            JanelaCadastro.Show();
         }
     }
 }

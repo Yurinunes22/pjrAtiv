@@ -1,5 +1,10 @@
+using System.Configuration;
+using System.Data.SqlClient;
+using System.Data;
 using System.Diagnostics;
 using System.Diagnostics.Eventing.Reader;
+
+
 
 namespace pjrAtiv
 {
@@ -65,8 +70,65 @@ namespace pjrAtiv
 
         private void btnCriarAcesso_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (txtSenha.Text == txtConfirmaSenha.Text)
+                {
+                    //Criando uma conexão
+                    SqlConnection conexao =
+                           new SqlConnection(ConfigurationManager.ConnectionStrings["UI.Properties.Settings.strConexao"].ToString());
 
-            TelaMenu telaMenu = new TelaMenu();
+
+
+                    //Criando um comando
+                    SqlCommand cmd = new SqlCommand();
+
+
+
+                    //criando texto do comando, tipo e conexão que será usada
+                    cmd.CommandText = "pi_Correntista";
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Connection = conexao;
+
+
+
+                    //inserindo parâmetros à procedure
+                    cmd.Parameters.Clear();
+                    cmd.Parameters.AddWithValue("nomecorrentista", txtNome.Text);
+                    cmd.Parameters.AddWithValue("dataNascimento", Convert.ToDateTime(txtDataNasc.Text));
+                    cmd.Parameters.AddWithValue("logradouro", txtLogradouro.Text);
+                    cmd.Parameters.AddWithValue("numero", txtNumero.Text);
+                    cmd.Parameters.AddWithValue("complemento", txtComplemento.Text);
+                    cmd.Parameters.AddWithValue("cidade", txtCidade.Text);
+                    cmd.Parameters.AddWithValue("estado", cmbEstados.Text);
+                    cmd.Parameters.AddWithValue("cpf", txtCpf.Text);
+                    cmd.Parameters.AddWithValue("senha", txtSenha.Text);
+                    cmd.Parameters.AddWithValue("celular", txtCelular.Text);
+
+
+
+                    //abrir a conexão
+                    conexao.Open();
+                    cmd.ExecuteNonQuery(); //executa o comando no BD
+                    conexao.Close();
+                    MessageBox.Show("Correntista cadastrado com sucesso!!!", "Info",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+
+                    UtilUi.Limpaform(this);
+                }
+                else
+                {
+                    throw new Exception("Os campos de senha não coincidem!!!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message,
+                    "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            /*TelaMenu telaMenu = new TelaMenu();
             this.Hide();
             telaMenu.Show();
 
@@ -81,7 +143,7 @@ namespace pjrAtiv
             else
             {
                 MessageBox.Show("Correto");
-            }
+            }*/
 
         }
 

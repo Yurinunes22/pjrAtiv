@@ -17,7 +17,7 @@ namespace DTO
 
             public DateTime dataEncerramento { get; set; }
 
-            //public DateTime DataFechamento { get; set; }
+            public DateTime DataEncerramento { get; set; }
 
             public decimal saldo { get; set; }
 

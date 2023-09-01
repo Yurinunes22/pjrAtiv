@@ -70,15 +70,15 @@ namespace pjrAtiv
                  leitor.Read();
                     //leitor.GetInt32(0);    
                     
-                    UsuarioLogado.idCliente = leitor.GetInt32(0);
+                    UsuarioLogado.IdCliente = leitor.GetInt32(0);
 
-                    UsuarioLogado.nome = leitor.GetString(1);
+                    UsuarioLogado.Nome = leitor.GetString(1);
 
-                    UsuarioLogado.dataNascimento = leitor.GetDateTime(12);
+                    UsuarioLogado.DataNascimento = leitor.GetDateTime(12);
 
                     UsuarioLogado.Logradouro = leitor.GetString(5);
 
-                    UsuarioLogado.numero = leitor.GetString(6);
+                    UsuarioLogado.Numero = leitor.GetString(6);
 
                     /*if (!leitor.IsDBNull(5))
 
@@ -88,30 +88,30 @@ namespace pjrAtiv
 
                     }*/
 
-                    UsuarioLogado.complemento = leitor.GetString(7);
+                    UsuarioLogado.Complemento = leitor.GetString(7);
 
-                    UsuarioLogado.cidade = leitor.GetString(8);
+                    UsuarioLogado.Cidade = leitor.GetString(8);
 
-                    UsuarioLogado.estado = leitor.GetString(9);
+                    UsuarioLogado.Estado = leitor.GetString(9);
 
-                    UsuarioLogado.cpfCliente = leitor.GetString(2);
+                    UsuarioLogado.CpfCliente = leitor.GetString(2);
 
-                    UsuarioLogado.senhaLogin = leitor.GetString(13);
+                    UsuarioLogado.SenhaLogin = leitor.GetString(13);
 
-                    UsuarioLogado.celular = leitor.GetString(3);
+                    UsuarioLogado.Celular = leitor.GetString(3);
 
-                    UsuarioLogado.email = leitor.GetString(4);
+                    UsuarioLogado.Email = leitor.GetString(4);
 
-                    UsuarioLogado.cep = leitor.GetInt32(10);
+                    UsuarioLogado.Cep = leitor.GetString(10);
 
-                    UsuarioLogado.genero = leitor.GetString(11);
+                    UsuarioLogado.Genero = leitor.GetString(11);
 
                     //fechando leitor
 
                     leitor.Close();
 
                     //criando texto do comando, tipo e conexão que será usada
-                    cmd.CommandText = "ps_buscaContasPorIdCorrentista";
+                    cmd.CommandText = "ps_buscaContasPorIdCliente";
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Connection = conexao;
 
@@ -119,7 +119,7 @@ namespace pjrAtiv
 
                     //passando os parâmetros necessários
                     cmd.Parameters.Clear();
-                    cmd.Parameters.AddWithValue("id", UsuarioLogado.idCliente);
+                    cmd.Parameters.AddWithValue("idCliente", UsuarioLogado.IdCliente);
 
 
 
@@ -153,6 +153,14 @@ namespace pjrAtiv
 
                             conta.dataAbertura = leitor.GetDateTime(2);
 
+                            if (!leitor.IsDBNull(3))
+
+                            {
+
+                                conta.DataEncerramento = leitor.GetDateTime(3);
+
+                            }
+
                             conta.saldo = leitor.GetDecimal(4);
 
                             conta.tipoConta = leitor.GetString(5);
@@ -175,14 +183,15 @@ namespace pjrAtiv
 
                     conexao.Close(); //fecha conexao com BD
 
-                    Form telainicial = Application.OpenForms["TelaInicial"];
+                    Form telainicial = Application.OpenForms["tela_inicial"];
                     //acessando o formulário aberto através da variável janelaPrincipal
                     MenuStrip menuPrincipal = (MenuStrip)telainicial.Controls[0];
                     menuPrincipal.Items[0].Text = "Logout";
-                    menuPrincipal.Items[1].Visible = true;
-                   /* menuPrincipal.Items[2].Visible = true;
+                    menuPrincipal.Items[1].Visible = false; 
+                    menuPrincipal.Items[2].Visible = true;
                     menuPrincipal.Items[3].Visible = true;
                     menuPrincipal.Items[4].Visible = true;
+                    /*menuPrincipal.Items[4].Visible = true;
                     menuPrincipal.Items[4].Text = UsuarioLogado.nome;
                     menuPrincipal.Items[5].Visible = true;
                     menuPrincipal.Items[6].Visible = true;
@@ -190,7 +199,7 @@ namespace pjrAtiv
 
 
 
-                    MessageBox.Show($"Olá,{UsuarioLogado.nome}!\n" +
+                    MessageBox.Show($"Olá,{UsuarioLogado.Nome}!\n" +
                         $"Você foi logado na conta {UsuarioLogado.Contas[0].idCliente.ToString()}\n" +
                         $"Para trocar de conta, utilize o menu Conta\\Alternar Conta");
                     //MessageBox.Show($"{CorrentistaLogado.Id.ToString()},{CorrentistaLogado.NomeCorrentista},{CorrentistaLogado.DataNascimento.ToString()},{CorrentistaLogado.Logradouro}," +

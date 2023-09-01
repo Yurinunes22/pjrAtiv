@@ -35,12 +35,11 @@ C:\Users\yuri.njesus\source\repos\Yuri\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\
 C:\Users\yuri.njesus\source\repos\Yuri\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\pjrAtiv.TelaMenu.resources
 C:\Users\yuri.njesus\source\repos\Yuri\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\pjrAtiv.TelaDeposito.resources
 C:\Users\yuri.njesus\source\repos\Yuri\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\pjrAtiv.TelaSaque.resources
+C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\bin\Debug\net6.0-windows\pjrAtiv.dll
 C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\bin\Debug\net6.0-windows\pjrAtiv.exe
 C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\bin\Debug\net6.0-windows\pjrAtiv.dll.config
 C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\bin\Debug\net6.0-windows\pjrAtiv.deps.json
 C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\bin\Debug\net6.0-windows\pjrAtiv.runtimeconfig.json
-C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\bin\Debug\net6.0-windows\pjrAtiv.dll
-C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\bin\Debug\net6.0-windows\pjrAtiv.pdb
 C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
 C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
 C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
@@ -68,4 +67,5 @@ C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\pjrAt
 C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\refint\pjrAtiv.dll
 C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\pjrAtiv.pdb
 C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\pjrAtiv.genruntimeconfig.cache
+C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\bin\Debug\net6.0-windows\pjrAtiv.pdb
 C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\ref\pjrAtiv.dll

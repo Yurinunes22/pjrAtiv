@@ -48,6 +48,8 @@
             txtGenero = new TextBox();
             txtDataNasc = new TextBox();
             pictureBox2 = new PictureBox();
+            txtSenha = new TextBox();
+            txtConfirmaSenha = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
@@ -103,7 +105,7 @@
             // 
             txtCelular.BackColor = SystemColors.ControlLightLight;
             txtCelular.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            txtCelular.Location = new Point(14, 208);
+            txtCelular.Location = new Point(14, 194);
             txtCelular.MaxLength = 11;
             txtCelular.Name = "txtCelular";
             txtCelular.PlaceholderText = "Celular";
@@ -115,7 +117,7 @@
             // 
             txtEmail.BackColor = SystemColors.ControlLightLight;
             txtEmail.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            txtEmail.Location = new Point(14, 277);
+            txtEmail.Location = new Point(14, 252);
             txtEmail.MaxLength = 6;
             txtEmail.Name = "txtEmail";
             txtEmail.PlaceholderText = "E-mail";
@@ -127,7 +129,7 @@
             // 
             txtLogradouro.BackColor = SystemColors.ControlLightLight;
             txtLogradouro.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            txtLogradouro.Location = new Point(14, 340);
+            txtLogradouro.Location = new Point(14, 309);
             txtLogradouro.MaxLength = 6;
             txtLogradouro.Name = "txtLogradouro";
             txtLogradouro.PlaceholderText = "Logradouro";
@@ -139,7 +141,7 @@
             // 
             txtNumero.BackColor = SystemColors.ControlLight;
             txtNumero.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            txtNumero.Location = new Point(14, 401);
+            txtNumero.Location = new Point(14, 364);
             txtNumero.MaxLength = 11;
             txtNumero.Name = "txtNumero";
             txtNumero.PlaceholderText = "Numero";
@@ -151,7 +153,7 @@
             // 
             txtComplemento.BackColor = SystemColors.ControlLightLight;
             txtComplemento.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            txtComplemento.Location = new Point(519, 78);
+            txtComplemento.Location = new Point(14, 419);
             txtComplemento.MaxLength = 11;
             txtComplemento.Name = "txtComplemento";
             txtComplemento.PlaceholderText = "Complemento";
@@ -163,7 +165,7 @@
             // 
             txtCidade.BackColor = SystemColors.ControlLightLight;
             txtCidade.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            txtCidade.Location = new Point(519, 138);
+            txtCidade.Location = new Point(519, 78);
             txtCidade.MaxLength = 11;
             txtCidade.Name = "txtCidade";
             txtCidade.PlaceholderText = "Cidade";
@@ -204,7 +206,7 @@
             // 
             txtEstado.BackColor = SystemColors.ControlLightLight;
             txtEstado.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            txtEstado.Location = new Point(519, 208);
+            txtEstado.Location = new Point(519, 138);
             txtEstado.MaxLength = 11;
             txtEstado.Name = "txtEstado";
             txtEstado.PlaceholderText = "Estado";
@@ -215,7 +217,7 @@
             // 
             txtCEP.BackColor = SystemColors.ControlLightLight;
             txtCEP.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            txtCEP.Location = new Point(519, 277);
+            txtCEP.Location = new Point(519, 194);
             txtCEP.MaxLength = 11;
             txtCEP.Name = "txtCEP";
             txtCEP.PlaceholderText = "CEP";
@@ -226,7 +228,7 @@
             // 
             txtGenero.BackColor = SystemColors.ControlLightLight;
             txtGenero.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            txtGenero.Location = new Point(519, 340);
+            txtGenero.Location = new Point(519, 252);
             txtGenero.MaxLength = 11;
             txtGenero.Name = "txtGenero";
             txtGenero.PlaceholderText = "Genero";
@@ -237,7 +239,7 @@
             // 
             txtDataNasc.BackColor = SystemColors.ControlLightLight;
             txtDataNasc.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            txtDataNasc.Location = new Point(519, 401);
+            txtDataNasc.Location = new Point(519, 309);
             txtDataNasc.MaxLength = 11;
             txtDataNasc.Name = "txtDataNasc";
             txtDataNasc.PlaceholderText = "Data de Nascimento";
@@ -254,12 +256,36 @@
             pictureBox2.TabIndex = 20;
             pictureBox2.TabStop = false;
             // 
+            // txtSenha
+            // 
+            txtSenha.BackColor = SystemColors.ControlLightLight;
+            txtSenha.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
+            txtSenha.Location = new Point(519, 364);
+            txtSenha.MaxLength = 11;
+            txtSenha.Name = "txtSenha";
+            txtSenha.PlaceholderText = "Senha";
+            txtSenha.Size = new Size(242, 38);
+            txtSenha.TabIndex = 21;
+            // 
+            // txtConfirmaSenha
+            // 
+            txtConfirmaSenha.BackColor = SystemColors.ControlLightLight;
+            txtConfirmaSenha.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
+            txtConfirmaSenha.Location = new Point(519, 419);
+            txtConfirmaSenha.MaxLength = 11;
+            txtConfirmaSenha.Name = "txtConfirmaSenha";
+            txtConfirmaSenha.PlaceholderText = "Confirmar Senha";
+            txtConfirmaSenha.Size = new Size(242, 38);
+            txtConfirmaSenha.TabIndex = 22;
+            // 
             // TelaCadastro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(894, 603);
+            Controls.Add(txtConfirmaSenha);
+            Controls.Add(txtSenha);
             Controls.Add(pictureBox2);
             Controls.Add(txtDataNasc);
             Controls.Add(txtGenero);
@@ -304,5 +330,7 @@
         private TextBox txtGenero;
         private TextBox txtDataNasc;
         private PictureBox pictureBox2;
+        private TextBox txtSenha;
+        private TextBox txtConfirmaSenha;
     }
 }
