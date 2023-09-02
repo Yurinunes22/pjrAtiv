@@ -34,17 +34,19 @@
             saqueToolStripMenuItem1 = new ToolStripMenuItem();
             depositoToolStripMenuItem = new ToolStripMenuItem();
             abrirContaToolStripMenuItem = new ToolStripMenuItem();
+            alterarDadosToolStripMenuItem = new ToolStripMenuItem();
             menu.SuspendLayout();
             SuspendLayout();
             // 
             // menu
             // 
-            menu.Items.AddRange(new ToolStripItem[] { cadastroToolStripMenuItem, cadastroToolStripMenuItem2, saqueToolStripMenuItem1, depositoToolStripMenuItem, abrirContaToolStripMenuItem });
+            menu.Items.AddRange(new ToolStripItem[] { cadastroToolStripMenuItem, cadastroToolStripMenuItem2, saqueToolStripMenuItem1, depositoToolStripMenuItem, abrirContaToolStripMenuItem, alterarDadosToolStripMenuItem });
             menu.Location = new Point(0, 0);
             menu.Name = "menu";
             menu.Size = new Size(908, 24);
             menu.TabIndex = 0;
             menu.Text = "menu";
+            menu.ItemClicked += menu_ItemClicked;
             // 
             // cadastroToolStripMenuItem
             // 
@@ -83,6 +85,13 @@
             abrirContaToolStripMenuItem.Text = "Abrir Conta";
             abrirContaToolStripMenuItem.Visible = false;
             // 
+            // alterarDadosToolStripMenuItem
+            // 
+            alterarDadosToolStripMenuItem.Name = "alterarDadosToolStripMenuItem";
+            alterarDadosToolStripMenuItem.Size = new Size(90, 20);
+            alterarDadosToolStripMenuItem.Text = "Alterar Dados";
+            alterarDadosToolStripMenuItem.Click += alterarDadosToolStripMenuItem_Click;
+            // 
             // tela_inicial
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -112,5 +121,6 @@
         private ToolStripMenuItem depositoToolStripMenuItem;
         private ToolStripMenuItem abrirContaToolStripMenuItem;
         private ToolStripMenuItem cadastroToolStripMenuItem2;
+        private ToolStripMenuItem alterarDadosToolStripMenuItem;
     }
 }

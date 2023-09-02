@@ -76,7 +76,7 @@ namespace pjrAtiv
                 {
                     //Criando uma conexão
                     SqlConnection conexao =
-                           new SqlConnection(ConfigurationManager.ConnectionStrings["UI.Properties.Settings.strConexao"].ToString());
+                           new SqlConnection(ConfigurationManager.ConnectionStrings["pjrAtiv.Properties.Settings.strConexão"].ToString());
 
 
 
@@ -86,7 +86,7 @@ namespace pjrAtiv
 
 
                     //criando texto do comando, tipo e conexão que será usada
-                    cmd.CommandText = "pi_Correntista";
+                    cmd.CommandText = "pi_Cliente";
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Connection = conexao;
 
@@ -94,16 +94,20 @@ namespace pjrAtiv
 
                     //inserindo parâmetros à procedure
                     cmd.Parameters.Clear();
-                    cmd.Parameters.AddWithValue("nomecorrentista", txtNome.Text);
-                    cmd.Parameters.AddWithValue("dataNascimento", Convert.ToDateTime(txtDataNasc.Text));
+                    cmd.Parameters.AddWithValue("nome", txtNome.Text);
+                    cmd.Parameters.AddWithValue("dataNascimento", Convert.ToDateTime(dtDataNasc.Text));
                     cmd.Parameters.AddWithValue("logradouro", txtLogradouro.Text);
                     cmd.Parameters.AddWithValue("numero", txtNumero.Text);
                     cmd.Parameters.AddWithValue("complemento", txtComplemento.Text);
                     cmd.Parameters.AddWithValue("cidade", txtCidade.Text);
                     cmd.Parameters.AddWithValue("estado", cmbEstados.Text);
-                    cmd.Parameters.AddWithValue("cpf", txtCpf.Text);
-                    cmd.Parameters.AddWithValue("senha", txtSenha.Text);
+                    cmd.Parameters.AddWithValue("cpfCliente", txtCpf.Text);
+                    cmd.Parameters.AddWithValue("senhaLogin", txtSenha.Text);
                     cmd.Parameters.AddWithValue("celular", txtCelular.Text);
+                    cmd.Parameters.AddWithValue("genero", cmbGenero.Text);
+                    cmd.Parameters.AddWithValue("email", txtEmail.Text);
+                    cmd.Parameters.AddWithValue("cep", txtCEP.Text);
+
 
 
 
@@ -111,7 +115,7 @@ namespace pjrAtiv
                     conexao.Open();
                     cmd.ExecuteNonQuery(); //executa o comando no BD
                     conexao.Close();
-                    MessageBox.Show("Correntista cadastrado com sucesso!!!", "Info",
+                    MessageBox.Show("Cliente cadastrado com sucesso!!!", "Info",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
@@ -178,6 +182,11 @@ namespace pjrAtiv
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

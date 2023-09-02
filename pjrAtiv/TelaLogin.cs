@@ -30,8 +30,8 @@ namespace pjrAtiv
 
 
 
-            try
-            {
+            //try
+            //{
                 //Criando uma conexão
 
                 SqlConnection conexao =
@@ -211,11 +211,11 @@ namespace pjrAtiv
                 {
                     MessageBox.Show("Usuario ou senha invalidos");
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            //}
+            // catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
 
 
            

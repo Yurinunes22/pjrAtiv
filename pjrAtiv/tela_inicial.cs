@@ -130,5 +130,22 @@ namespace pjrAtiv
             JanelaCadastro.MdiParent = this;
             JanelaCadastro.Show();
         }
+
+        private void menu_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void alterarDadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            TelaAlterarDados JanelaAlterardados= new TelaAlterarDados();
+            JanelaAlterardados.MdiParent = this;
+            JanelaAlterardados.Show();
+
+            
+
+            
+        }
     }
 }

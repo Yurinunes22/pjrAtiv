@@ -1,18 +1,18 @@
 create table Cliente(
 idCliente int identity,
-Nome varchar (50)not null,
+nome varchar (50)not null,
 cpfCliente varchar (11)not null,
-Celular char (11) not null,
-Email varchar (50) not null,
+celular char (11) not null,
+email varchar (50) not null,
 Logradouro varchar (50) not null,
 numero varchar (10) not null,
-Complemento varchar (10) not null,
-Cidade varchar (50) not null,
-Estado varchar (30) not null,
+complemento varchar (10) not null,
+cidade varchar (50) not null,
+estado varchar (30) not null,
 cep char (8) not null,
-Genero varchar (20) not null,
-DataNascimento datetime not null,
-SenhaLogin char (6) not null,
+genero varchar (20) not null,
+dataNascimento datetime not null,
+senhaLogin char (6) not null,
 
 constraint pk_Cliente primary key (idCliente),
 constraint uk_Cliente_cpf unique (cpfCliente),
@@ -23,10 +23,11 @@ create table Conta (
 idConta int identity,
 idCliente int not null,
 dataAbertura datetime not null,
+dataEncerramento datetime,
 saldo decimal (10,2)not null,
 tipoConta varchar (50) not null,
-StatusConta varchar (7),
-SenhaConta char (6),
+statusConta varchar (7),
+senhaConta char (6) not null,
 
 constraint pk_Conta primary key (idConta),
 constraint fk_Conta_Cliente foreign key (idCliente) references Cliente (idCliente),
@@ -78,3 +79,4 @@ select * from Agendamento
 
 drop database JukasBankss
 drop table Cliente
+select * from cliente
