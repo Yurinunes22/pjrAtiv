@@ -34,7 +34,7 @@
             cmbAlterarEstados = new ComboBox();
             pictureBox2 = new PictureBox();
             txtAlterarCEP = new TextBox();
-            btnCriarAcesso = new Button();
+            btnAlterarDados = new Button();
             txtAlterarCidade = new TextBox();
             txtAlterarComplemento = new TextBox();
             txtAlterarNumero = new TextBox();
@@ -45,6 +45,7 @@
             txtAlterarNome = new TextBox();
             lblLogin = new Label();
             btnLimparTxt = new Button();
+            txtConfirmarSenha = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
@@ -77,6 +78,7 @@
             cmbAlterarEstados.Size = new Size(121, 31);
             cmbAlterarEstados.TabIndex = 42;
             cmbAlterarEstados.Text = "UF";
+            cmbAlterarEstados.SelectedIndexChanged += cmbAlterarEstados_SelectedIndexChanged;
             // 
             // pictureBox2
             // 
@@ -98,16 +100,17 @@
             txtAlterarCEP.PlaceholderText = "CEP";
             txtAlterarCEP.Size = new Size(242, 31);
             txtAlterarCEP.TabIndex = 38;
+            txtAlterarCEP.TextChanged += txtAlterarCEP_TextChanged;
             // 
-            // btnCriarAcesso
+            // btnAlterarDados
             // 
-            btnCriarAcesso.Location = new Point(664, 473);
-            btnCriarAcesso.Name = "btnCriarAcesso";
-            btnCriarAcesso.Size = new Size(118, 29);
-            btnCriarAcesso.TabIndex = 37;
-            btnCriarAcesso.Text = "Criar Acesso";
-            btnCriarAcesso.UseVisualStyleBackColor = true;
-            btnCriarAcesso.Click += btnCriarAcesso_Click;
+            btnAlterarDados.Location = new Point(664, 473);
+            btnAlterarDados.Name = "btnAlterarDados";
+            btnAlterarDados.Size = new Size(118, 29);
+            btnAlterarDados.TabIndex = 37;
+            btnAlterarDados.Text = "Alterar Dados";
+            btnAlterarDados.UseVisualStyleBackColor = true;
+            btnAlterarDados.Click += btnCriarAcesso_Click;
             // 
             // txtAlterarCidade
             // 
@@ -152,6 +155,7 @@
             txtAlterarLogradouro.PlaceholderText = "Logradouro";
             txtAlterarLogradouro.Size = new Size(242, 31);
             txtAlterarLogradouro.TabIndex = 31;
+            txtAlterarLogradouro.TextChanged += txtAlterarLogradouro_TextChanged;
             // 
             // txtAlterarEmail
             // 
@@ -220,18 +224,31 @@
             btnLimparTxt.UseVisualStyleBackColor = true;
             btnLimparTxt.Click += btnLimparTxt_Click;
             // 
+            // txtConfirmarSenha
+            // 
+            txtConfirmarSenha.BackColor = SystemColors.ControlLightLight;
+            txtConfirmarSenha.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            txtConfirmarSenha.Location = new Point(540, 309);
+            txtConfirmarSenha.MaxLength = 11;
+            txtConfirmarSenha.Name = "txtConfirmarSenha";
+            txtConfirmarSenha.PlaceholderText = "Celular";
+            txtConfirmarSenha.Size = new Size(242, 31);
+            txtConfirmarSenha.TabIndex = 46;
+            txtConfirmarSenha.Text = "ConfirmarSenha";
+            // 
             // TelaAlterarDados
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(835, 550);
+            Controls.Add(txtConfirmarSenha);
             Controls.Add(btnLimparTxt);
             Controls.Add(cmbAlterarGenero);
             Controls.Add(dtAlterarDataNasc);
             Controls.Add(cmbAlterarEstados);
             Controls.Add(pictureBox2);
             Controls.Add(txtAlterarCEP);
-            Controls.Add(btnCriarAcesso);
+            Controls.Add(btnAlterarDados);
             Controls.Add(txtAlterarCidade);
             Controls.Add(txtAlterarComplemento);
             Controls.Add(txtAlterarNumero);
@@ -256,7 +273,7 @@
         private ComboBox cmbAlterarEstados;
         private PictureBox pictureBox2;
         private TextBox txtAlterarCEP;
-        private Button btnCriarAcesso;
+        private Button btnAlterarDados;
         private TextBox txtAlterarCidade;
         private TextBox txtAlterarComplemento;
         private TextBox txtAlterarNumero;
@@ -267,5 +284,6 @@
         private TextBox txtAlterarNome;
         private Label lblLogin;
         private Button btnLimparTxt;
+        private TextBox txtConfirmarSenha;
     }
 }
