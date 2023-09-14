@@ -231,10 +231,9 @@
             txtConfirmarSenha.Location = new Point(540, 309);
             txtConfirmarSenha.MaxLength = 11;
             txtConfirmarSenha.Name = "txtConfirmarSenha";
-            txtConfirmarSenha.PlaceholderText = "Celular";
+            txtConfirmarSenha.PlaceholderText = "ConfirmarSenha";
             txtConfirmarSenha.Size = new Size(242, 31);
             txtConfirmarSenha.TabIndex = 46;
-            txtConfirmarSenha.Text = "ConfirmarSenha";
             // 
             // TelaAlterarDados
             // 

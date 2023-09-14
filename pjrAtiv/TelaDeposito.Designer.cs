@@ -33,9 +33,8 @@
             lblValorDeposito = new Label();
             lblinsiraValor = new Label();
             txtValorDeposito = new TextBox();
-            txtSenha = new TextBox();
+            txtSenhaDeposito = new TextBox();
             btnConfirmacao = new Button();
-            lblMensagem = new Label();
             btnVoltarDeposito = new Button();
             SuspendLayout();
             // 
@@ -86,13 +85,13 @@
             txtValorDeposito.Size = new Size(191, 23);
             txtValorDeposito.TabIndex = 8;
             // 
-            // txtSenha
+            // txtSenhaDeposito
             // 
-            txtSenha.Location = new Point(498, 186);
-            txtSenha.Name = "txtSenha";
-            txtSenha.PlaceholderText = "Senha:****";
-            txtSenha.Size = new Size(191, 23);
-            txtSenha.TabIndex = 9;
+            txtSenhaDeposito.Location = new Point(498, 186);
+            txtSenhaDeposito.Name = "txtSenhaDeposito";
+            txtSenhaDeposito.PlaceholderText = "Senha:****";
+            txtSenhaDeposito.Size = new Size(191, 23);
+            txtSenhaDeposito.TabIndex = 9;
             // 
             // btnConfirmacao
             // 
@@ -103,15 +102,6 @@
             btnConfirmacao.Text = "Confirmar Depósito ";
             btnConfirmacao.UseVisualStyleBackColor = true;
             btnConfirmacao.Click += button1_Click;
-            // 
-            // lblMensagem
-            // 
-            lblMensagem.AutoSize = true;
-            lblMensagem.Location = new Point(498, 277);
-            lblMensagem.Name = "lblMensagem";
-            lblMensagem.Size = new Size(92, 15);
-            lblMensagem.TabIndex = 11;
-            lblMensagem.Text = "Depósito  Feito !";
             // 
             // btnVoltarDeposito
             // 
@@ -129,9 +119,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(btnVoltarDeposito);
-            Controls.Add(lblMensagem);
             Controls.Add(btnConfirmacao);
-            Controls.Add(txtSenha);
+            Controls.Add(txtSenhaDeposito);
             Controls.Add(txtValorDeposito);
             Controls.Add(lblinsiraValor);
             Controls.Add(lblDeposito);
@@ -150,9 +139,8 @@
         private Label lblValorDeposito;
         private Label lblinsiraValor;
         private TextBox txtValorDeposito;
-        private TextBox txtSenha;
+        private TextBox txtSenhaDeposito;
         private Button btnConfirmacao;
-        private Label lblMensagem;
         private Button btnVoltarDeposito;
     }
 }

@@ -24,6 +24,7 @@ namespace pjrAtiv
         public static string? Genero { get; set; }
         public static DateTime? DataNascimento { get; set; }
         public static string? SenhaLogin{ get; set; }
+        public static int ContaLogada { get; set; }
 
 
 
@@ -45,6 +46,8 @@ namespace pjrAtiv
             UsuarioLogado.Celular = String.Empty;
             UsuarioLogado.SenhaLogin = String.Empty;
             UsuarioLogado.Contas.Clear();
+            UsuarioLogado.ContaLogada = 0;
+            
         }
     }
 }

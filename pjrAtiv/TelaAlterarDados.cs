@@ -28,7 +28,7 @@ namespace pjrAtiv
                 {
                     //Criando uma conexão
                     SqlConnection conexao =
-                           new SqlConnection(ConfigurationManager.ConnectionStrings["prjAula1.Properties.Settings.strConexao"].ToString());
+                           new SqlConnection(ConfigurationManager.ConnectionStrings["pjrAtiv.Properties.Settings.strConexão"].ToString());
                     //Criando um comando
                     SqlCommand cmd = new SqlCommand();
 
@@ -37,7 +37,7 @@ namespace pjrAtiv
 
 
                     //criando texto do comando, tipo e conexão que será usada
-                    cmd.CommandText = "pu_AtualiazarCliente2";
+                    cmd.CommandText = "pu_AtualiazarCliente";
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Connection = conexao;
 
@@ -48,7 +48,7 @@ namespace pjrAtiv
                     //inserindo parâmetros à procedure
                     cmd.Parameters.Clear();
                     cmd.Parameters.AddWithValue("idCliente", UsuarioLogado.IdCliente);
-                    cmd.Parameters.AddWithValue("nomeCliente", txtAlterarNome.Text);
+                    cmd.Parameters.AddWithValue("nome", txtAlterarNome.Text);
                     cmd.Parameters.AddWithValue("cpfCliente", txtAlterarCpf.Text);
                     cmd.Parameters.AddWithValue("dataNascimento", Convert.ToDateTime(dtAlterarDataNasc.Text));
                     cmd.Parameters.AddWithValue("Logradouro", txtAlterarLogradouro.Text);
@@ -56,7 +56,16 @@ namespace pjrAtiv
                     cmd.Parameters.AddWithValue("complemento", txtAlterarComplemento.Text);
                     cmd.Parameters.AddWithValue("cidade", txtAlterarCidade.Text);
                     cmd.Parameters.AddWithValue("estado", cmbAlterarEstados.Text);
-                    cmd.Parameters.AddWithValue("cpf", txtAlterarCpf.Text);
+                    cmd.Parameters.AddWithValue("genero", cmbAlterarGenero.Text);
+                    cmd.Parameters.AddWithValue("celular", txtAlterarCelular.Text);
+                    cmd.Parameters.AddWithValue("email", txtAlterarEmail.Text);
+                    cmd.Parameters.AddWithValue("cep", txtAlterarCEP.Text);
+                    cmd.Parameters.AddWithValue("senhaLogin", UsuarioLogado.SenhaLogin);
+
+
+
+
+
 
 
 

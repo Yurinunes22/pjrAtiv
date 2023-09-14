@@ -60,7 +60,27 @@ create procedure pi_Conta_48
 as
 insert into conta (idCliente,dataAbertura,dataEncerramento,saldo,tipoConta,statusConta,senhaConta)
 values (@idCliente,@dataAbertura,@dataEncerramento,@saldo,@tipoConta,@statusConta,@senhaConta)
-select @@identity as 'ultimoID'
+select @@identity as 'ultimoI'
 
+create procedure pu_AtualiazarCliente
+@idCliente int,
+@nome varchar (50),
+@cpfCliente varchar (11),
+@celular char (11),
+@email varchar (50),
+@Logradouro varchar (50),
+@numero varchar (10),
+@complemento varchar (10),
+@cidade varchar (50),
+@estado varchar (30),
+@cep char (8),
+@genero varchar (20),
+@dataNascimento datetime ,
+@senhaLogin char (6)
+as
+update Cliente
+set
+nome= @nome, cpfCliente=@cpfCliente, celular=@celular,email=@email ,Logradouro=@Logradouro, numero=@numero, complemento=@complemento, cidade=@cidade ,estado=@estado ,cep=@cep , genero=@genero,dataNascimento=@dataNascimento ,senhaLogin=@senhaLogin
+where idCliente = @idCliente
 
 

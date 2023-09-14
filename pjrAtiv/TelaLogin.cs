@@ -176,7 +176,7 @@ namespace pjrAtiv
                             UsuarioLogado.Contas.Add(conta);
 
                         }
-
+                    UsuarioLogado.ContaLogada = UsuarioLogado.Contas[0].idConta;
                     }
 
                     leitor.Close(); //fecha leitor
