@@ -15,10 +15,8 @@ namespace DTO
 
             public DateTime dataAbertura { get; set; }
 
-            public DateTime dataEncerramento { get; set; }
-
+            public DateTime? dataEncerramento { get; set; }
             public DateTime DataEncerramento { get; set; }
-
             public decimal saldo { get; set; }
 
             public string tipoConta { get; set; }

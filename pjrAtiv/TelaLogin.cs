@@ -197,11 +197,19 @@ namespace pjrAtiv
                     menuPrincipal.Items[6].Visible = true;
                     menuPrincipal.Items[6].Text = UsuarioLogado.Contas[0].idCliente.ToString();*/
 
+                  if (UsuarioLogado.Contas.Count == 0)
+                  {
 
+                    MessageBox.Show($"Olá,{UsuarioLogado.Nome}");
 
+                  }
+                 else
+                 {
                     MessageBox.Show($"Olá,{UsuarioLogado.Nome}!\n" +
                         $"Você foi logado na conta {UsuarioLogado.Contas[0].idCliente.ToString()}\n" +
                         $"Para trocar de conta, utilize o menu Conta\\Alternar Conta");
+                 }
+                    
                     //MessageBox.Show($"{CorrentistaLogado.Id.ToString()},{CorrentistaLogado.NomeCorrentista},{CorrentistaLogado.DataNascimento.ToString()},{CorrentistaLogado.Logradouro}," +
                     //    $"{CorrentistaLogado.Numero},{CorrentistaLogado.Complemento},{CorrentistaLogado.Cidade}," +
                     //    $"{CorrentistaLogado.Estado},{CorrentistaLogado.Cpf},{CorrentistaLogado.Senha},{CorrentistaLogado.Celular}");

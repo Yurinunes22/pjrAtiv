@@ -139,13 +139,20 @@ namespace pjrAtiv
         private void alterarDadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            TelaAlterarDados JanelaAlterardados= new TelaAlterarDados();
+            TelaAlterarDados JanelaAlterardados = new TelaAlterarDados();
             JanelaAlterardados.MdiParent = this;
             JanelaAlterardados.Show();
 
-            
 
-            
+
+
+        }
+
+        private void abrirContaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TelaAbrirConta JanelaAbrirConta = new TelaAbrirConta();
+            JanelaAbrirConta.MdiParent = this;
+            JanelaAbrirConta.Show();
         }
     }
 }

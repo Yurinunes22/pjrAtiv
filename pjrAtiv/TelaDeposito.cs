@@ -63,6 +63,7 @@ namespace pjrAtiv
             try
             {
                 Conta conta = new Conta();
+                //conta.statusConta = "Ativa";
 
                 foreach (var item in UsuarioLogado.Contas)
                 {
@@ -94,10 +95,9 @@ namespace pjrAtiv
                     cmd.Parameters.Clear();
                     cmd.Parameters.AddWithValue("idConta",UsuarioLogado.ContaLogada);
                     cmd.Parameters.AddWithValue("dataAbertura",conta.dataAbertura);
-                    cmd.Parameters.AddWithValue("dataEncerramento",conta.dataEncerramento);
                     cmd.Parameters.AddWithValue("saldo",Convert.ToDecimal(txtValorDeposito.Text)+conta.saldo);
                     cmd.Parameters.AddWithValue("tipoConta",conta.tipoConta); 
-                    cmd.Parameters.AddWithValue("statusConta",conta.senhaConta); 
+                    cmd.Parameters.AddWithValue("statusConta",conta.statusConta); 
                     cmd.Parameters.AddWithValue("senhaConta",conta.senhaConta);
 
 
@@ -130,6 +130,8 @@ namespace pjrAtiv
 
                     //abrir a conexão
                     conexao.Open();
+
+                    
                     cmd.ExecuteNonQuery(); //executa o comando no BD
                     conexao.Close();
                     MessageBox.Show("Deposito Feito com sucesso!", "Info",
@@ -154,7 +156,7 @@ namespace pjrAtiv
             {
                 MessageBox.Show(ex.Message,
                     "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+           }
         }
 
         private void btnVoltarDeposito_Click(object sender, EventArgs e)

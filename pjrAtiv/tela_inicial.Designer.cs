@@ -84,6 +84,7 @@
             abrirContaToolStripMenuItem.Size = new Size(80, 20);
             abrirContaToolStripMenuItem.Text = "Abrir Conta";
             abrirContaToolStripMenuItem.Visible = false;
+            abrirContaToolStripMenuItem.Click += abrirContaToolStripMenuItem_Click;
             // 
             // alterarDadosToolStripMenuItem
             // 

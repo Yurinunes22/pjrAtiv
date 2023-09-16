@@ -51,15 +51,14 @@ values (@nome,@cpfCliente,@celular,@email,@logradouro,@numero,@complemento,@cida
 create procedure pi_Conta_48
 @idCliente int ,
 @dataAbertura datetime ,
-@dataEncerramento datetime,
 @saldo decimal (10,2),
 @tipoConta varchar (50),
 @statusConta varchar (7),
 @senhaConta char (6) 
 
 as
-insert into conta (idCliente,dataAbertura,dataEncerramento,saldo,tipoConta,statusConta,senhaConta)
-values (@idCliente,@dataAbertura,@dataEncerramento,@saldo,@tipoConta,@statusConta,@senhaConta)
+insert into conta (idCliente,dataAbertura,saldo,tipoConta,statusConta,senhaConta)
+values (@idCliente,@dataAbertura,@saldo,@tipoConta,@statusConta,@senhaConta)
 select @@identity as 'ultimoI'
 
 create procedure pu_AtualiazarCliente
@@ -84,3 +83,25 @@ nome= @nome, cpfCliente=@cpfCliente, celular=@celular,email=@email ,Logradouro=@
 where idCliente = @idCliente
 
 
+exec pu_AtualiazarCliente 
+
+create procedure pu_AtualizarConta
+
+@idConta int,
+@dataAbertura datetime ,
+@saldo decimal (10,2),
+@tipoConta varchar (50),
+@statusConta varchar (7),
+@senhaConta char (6) 
+as
+update Conta
+set
+dataAbertura=@dataAbertura,saldo=@saldo,tipoConta=@tipoConta,statusConta=@statusConta,senhaConta=@senhaConta
+where idConta=@idConta
+
+
+
+select * from Conta
+select * from Cliente
+
+drop procedure  pi_Conta_48 
