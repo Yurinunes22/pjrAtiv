@@ -89,13 +89,13 @@ namespace pjrAtiv
 
                    
 
-
+                    conta.saldo = Convert.ToDecimal(txtValorDeposito.Text) + conta.saldo;
 
                     //inserindo parâmetros à procedure
                     cmd.Parameters.Clear();
                     cmd.Parameters.AddWithValue("idConta",UsuarioLogado.ContaLogada);
                     cmd.Parameters.AddWithValue("dataAbertura",conta.dataAbertura);
-                    cmd.Parameters.AddWithValue("saldo",Convert.ToDecimal(txtValorDeposito.Text)+conta.saldo);
+                    cmd.Parameters.AddWithValue("saldo",conta.saldo);
                     cmd.Parameters.AddWithValue("tipoConta",conta.tipoConta); 
                     cmd.Parameters.AddWithValue("statusConta",conta.statusConta); 
                     cmd.Parameters.AddWithValue("senhaConta",conta.senhaConta);
@@ -140,6 +140,8 @@ namespace pjrAtiv
 
 
                     UtilUi.Limpaform(this);
+
+                    lblSaldo.Text = conta.saldo.ToString();
                 }
 
                 else

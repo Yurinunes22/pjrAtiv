@@ -50,9 +50,13 @@ namespace pjrAtiv
 
                 menu.Items[0].Text = "Login";
 
-                menu.Items[1].Visible = false;
+                menu.Items[1].Visible = true;
                 menu.Items[2].Visible = false;
                 menu.Items[3].Visible = false;
+                menu.Items[4].Visible = false;
+                menu.Items[5].Visible = false;
+                menu.Items[6].Visible = false;
+
                 UsuarioLogado.Deslogar();
 
             }
@@ -153,6 +157,18 @@ namespace pjrAtiv
             TelaAbrirConta JanelaAbrirConta = new TelaAbrirConta();
             JanelaAbrirConta.MdiParent = this;
             JanelaAbrirConta.Show();
+        }
+
+        private void alterarContaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AlterarConta JanelaAlterarConta = new AlterarConta();
+            JanelaAlterarConta.MdiParent = this;
+            JanelaAlterarConta.Show();
+        }
+
+        private void verSaldoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ;
         }
     }
 }

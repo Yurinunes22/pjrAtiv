@@ -29,10 +29,9 @@
         private void InitializeComponent()
         {
             btnVoltarSaque = new Button();
-            lblMensagem = new Label();
             btnConfirmacao = new Button();
-            txtSenha = new TextBox();
-            txtValorDeposito = new TextBox();
+            txtSenhaSaque = new TextBox();
+            txtValorSaque = new TextBox();
             lblinsiraValor = new Label();
             lblSaque = new Label();
             lblSaldo = new Label();
@@ -49,15 +48,6 @@
             btnVoltarSaque.UseVisualStyleBackColor = true;
             btnVoltarSaque.Click += btnVoltarSaque_Click;
             // 
-            // lblMensagem
-            // 
-            lblMensagem.AutoSize = true;
-            lblMensagem.Location = new Point(543, 290);
-            lblMensagem.Name = "lblMensagem";
-            lblMensagem.Size = new Size(77, 15);
-            lblMensagem.TabIndex = 20;
-            lblMensagem.Text = "Saque  Feito !";
-            // 
             // btnConfirmacao
             // 
             btnConfirmacao.Location = new Point(543, 249);
@@ -66,22 +56,23 @@
             btnConfirmacao.TabIndex = 19;
             btnConfirmacao.Text = "Confirmar Saque  ";
             btnConfirmacao.UseVisualStyleBackColor = true;
+            btnConfirmacao.Click += btnConfirmacao_Click;
             // 
-            // txtSenha
+            // txtSenhaSaque
             // 
-            txtSenha.Location = new Point(543, 199);
-            txtSenha.Name = "txtSenha";
-            txtSenha.PlaceholderText = "Senha:****";
-            txtSenha.Size = new Size(191, 23);
-            txtSenha.TabIndex = 18;
+            txtSenhaSaque.Location = new Point(543, 199);
+            txtSenhaSaque.Name = "txtSenhaSaque";
+            txtSenhaSaque.PlaceholderText = "Senha:****";
+            txtSenhaSaque.Size = new Size(191, 23);
+            txtSenhaSaque.TabIndex = 18;
             // 
-            // txtValorDeposito
+            // txtValorSaque
             // 
-            txtValorDeposito.Location = new Point(543, 157);
-            txtValorDeposito.Name = "txtValorDeposito";
-            txtValorDeposito.PlaceholderText = "00,00";
-            txtValorDeposito.Size = new Size(191, 23);
-            txtValorDeposito.TabIndex = 17;
+            txtValorSaque.Location = new Point(543, 157);
+            txtValorSaque.Name = "txtValorSaque";
+            txtValorSaque.PlaceholderText = "00,00";
+            txtValorSaque.Size = new Size(191, 23);
+            txtValorSaque.TabIndex = 17;
             // 
             // lblinsiraValor
             // 
@@ -125,10 +116,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(btnVoltarSaque);
-            Controls.Add(lblMensagem);
             Controls.Add(btnConfirmacao);
-            Controls.Add(txtSenha);
-            Controls.Add(txtValorDeposito);
+            Controls.Add(txtSenhaSaque);
+            Controls.Add(txtValorSaque);
             Controls.Add(lblinsiraValor);
             Controls.Add(lblSaque);
             Controls.Add(lblSaldo);
@@ -142,10 +132,9 @@
         #endregion
 
         private Button btnVoltarSaque;
-        private Label lblMensagem;
         private Button btnConfirmacao;
-        private TextBox txtSenha;
-        private TextBox txtValorDeposito;
+        private TextBox txtSenhaSaque;
+        private TextBox txtValorSaque;
         private Label lblinsiraValor;
         private Label lblSaque;
         private Label lblSaldo;

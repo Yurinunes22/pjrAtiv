@@ -35,12 +35,13 @@
             depositoToolStripMenuItem = new ToolStripMenuItem();
             abrirContaToolStripMenuItem = new ToolStripMenuItem();
             alterarDadosToolStripMenuItem = new ToolStripMenuItem();
+            alterarContaToolStripMenuItem = new ToolStripMenuItem();
             menu.SuspendLayout();
             SuspendLayout();
             // 
             // menu
             // 
-            menu.Items.AddRange(new ToolStripItem[] { cadastroToolStripMenuItem, cadastroToolStripMenuItem2, saqueToolStripMenuItem1, depositoToolStripMenuItem, abrirContaToolStripMenuItem, alterarDadosToolStripMenuItem });
+            menu.Items.AddRange(new ToolStripItem[] { cadastroToolStripMenuItem, cadastroToolStripMenuItem2, saqueToolStripMenuItem1, depositoToolStripMenuItem, abrirContaToolStripMenuItem, alterarDadosToolStripMenuItem, alterarContaToolStripMenuItem });
             menu.Location = new Point(0, 0);
             menu.Name = "menu";
             menu.Size = new Size(908, 24);
@@ -91,7 +92,16 @@
             alterarDadosToolStripMenuItem.Name = "alterarDadosToolStripMenuItem";
             alterarDadosToolStripMenuItem.Size = new Size(90, 20);
             alterarDadosToolStripMenuItem.Text = "Alterar Dados";
+            alterarDadosToolStripMenuItem.Visible = false;
             alterarDadosToolStripMenuItem.Click += alterarDadosToolStripMenuItem_Click;
+            // 
+            // alterarContaToolStripMenuItem
+            // 
+            alterarContaToolStripMenuItem.Name = "alterarContaToolStripMenuItem";
+            alterarContaToolStripMenuItem.Size = new Size(89, 20);
+            alterarContaToolStripMenuItem.Text = "Alterar Conta";
+            alterarContaToolStripMenuItem.Visible = false;
+            alterarContaToolStripMenuItem.Click += alterarContaToolStripMenuItem_Click;
             // 
             // tela_inicial
             // 
@@ -123,5 +133,6 @@
         private ToolStripMenuItem abrirContaToolStripMenuItem;
         private ToolStripMenuItem cadastroToolStripMenuItem2;
         private ToolStripMenuItem alterarDadosToolStripMenuItem;
+        private ToolStripMenuItem alterarContaToolStripMenuItem;
     }
 }

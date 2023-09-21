@@ -71,3 +71,4 @@ C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\bin\Debug\net6.0-windows\pjrAt
 C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\ref\pjrAtiv.dll
 C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\pjrAtiv.TelaAbrirConta.resources
 C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\pjrAtiv.TelaAlterarDados.resources
+C:\Users\yuri.njesus\source\repos\pjrAtiv\pjrAtiv\obj\Debug\net6.0-windows\pjrAtiv.AlterarConta.resources

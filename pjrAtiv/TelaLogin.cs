@@ -191,13 +191,15 @@ namespace pjrAtiv
                     menuPrincipal.Items[2].Visible = true;
                     menuPrincipal.Items[3].Visible = true;
                     menuPrincipal.Items[4].Visible = true;
+                    menuPrincipal.Items[5].Visible = true;
+                    menuPrincipal.Items[6].Visible = true;
                     /*menuPrincipal.Items[4].Visible = true;
                     menuPrincipal.Items[4].Text = UsuarioLogado.nome;
                     menuPrincipal.Items[5].Visible = true;
                     menuPrincipal.Items[6].Visible = true;
                     menuPrincipal.Items[6].Text = UsuarioLogado.Contas[0].idCliente.ToString();*/
 
-                  if (UsuarioLogado.Contas.Count == 0)
+                if (UsuarioLogado.Contas.Count == 0)
                   {
 
                     MessageBox.Show($"Olá,{UsuarioLogado.Nome}");
